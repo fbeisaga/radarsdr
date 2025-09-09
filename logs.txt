@@ -1,3 +1,17 @@
+python3 -c "import iio; print('iio desde:', getattr(iio,'__file__',str(iio)))"
+python3 -c "from gnuradio import iio as giio; print('gnuradio.iio disponible:', getattr(giio,'__file__',str(giio))); print('contiene fmcomms5?', 'fmcomms5_source_f32c' in dir(giio))"
+
+cd /home/analog/Desktop/EJEMPLOS
+cp FM_BEISAGAv1.py FM_BEISAGAv1.py.bak
+
+# Reemplaza la línea "import iio" por "from gnuradio import iio as iio_gn"
+# (esto mantiene el resto del script sin demasiados cambios; luego cambiarás las referencias)
+
+sed -i "s/^import iio$/from gnuradio import iio as iio_gn/" FM_BEISAGAv1.py
+sed -i "s/\biio\./iio_gn./g" FM_BEISAGAv1.py
+
+python3 FM_BEISAGAv1.py
+////////////////////////////////////////////////////////////////////////////////////7777777
 Generating: '/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py'
 
 Executing: /usr/bin/python3 -u /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
@@ -400,3 +414,4 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
