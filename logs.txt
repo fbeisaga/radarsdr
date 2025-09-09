@@ -209,5 +209,194 @@ sudo apt install -y build-essential cmake git pkg-config \
  libiio-dev libad9361-dev libthrift-dev thrift-compiler python3-thrift \
  gnuradio-dev gnuradio python3-dev swig doxygen libboost-all-dev
 
+/////////////////////////////////////////////////////////////////
+analog@analog:~/gr-iio/build $ apt search libiio
+Sorting... Done
+Full Text Search... Done
+gr-iio/oldstable,now 0.3-9+b3 armhf [installed]
+  IIO blocks for GnuRadio
 
+iiod/oldstable 0.23-2~bpo11~rpt1 armhf
+  Daemon to share IIO devices on the network
 
+libad9361-0/oldstable,now 0.2-1 armhf [installed,automatic]
+  Library of functions specific to the Analog Devices AD9361
+
+libad9361-dev/oldstable,now 0.2-1 armhf [installed]
+  Development files specific to the Analog Devices AD9361
+
+libgnuradio-iio1/oldstable,now 0.3-9+b3 armhf [installed,automatic]
+  IIO blocks for GnuRadio (runtime library)
+
+libiio-dev/oldstable,now 0.23-2~bpo11~rpt1 armhf [installed]
+  libiio development files
+
+libiio-utils/oldstable 0.23-2~bpo11~rpt1 armhf
+  Miscellaneous libiio utilities
+
+libiio-utils-dbgsym/oldstable 0.23-2~bpo11~rpt1 armhf
+  debug symbols for libiio-utils
+
+libiio0/oldstable,now 0.23-2~bpo11~rpt1 armhf [installed,automatic]
+  Library for interfacing with IIO devices
+
+libiio0-dbgsym/oldstable 0.23-2~bpo11~rpt1 armhf
+  debug symbols for libiio0
+
+libiio0-doc/oldstable 0.23-2~bpo11~rpt1 all
+  libiio documentation
+
+python3-libiio/oldstable 0.23-2~bpo11~rpt1 all
+  Python bindings for libiio
+//////////////////////////////////////////////////////////////
+
+analog@analog:~/gr-iio/build $ apt search gnuradio
+Sorting... Done
+Full Text Search... Done
+gnuradio/oldstable,now 3.8.2.0-14 armhf [installed]
+  GNU Radio Software Radio Toolkit
+
+gnuradio-dev/oldstable,now 3.8.2.0-14 armhf [installed]
+  GNU Software Defined Radio toolkit development
+
+gnuradio-doc/oldstable 3.8.2.0-14 all
+  GNU Software Defined Radio toolkit documentation
+
+gr-air-modes/oldstable 0.0.20190917-2+b4 armhf
+  Gnuradio Mode-S/ADS-B radio
+
+gr-dab/oldstable 0.4-2+b6 armhf
+  Gnuradio blocks and tools for receiving DAB and DAB+ radio
+
+gr-fcdproplus/oldstable 3.8~20190817-3+b4 armhf
+  Funcube Dongle Pro Plus controller for GNU Radio
+
+gr-fosphor/oldstable 3.8~2.2d4fe78-1+b5 armhf
+  gnuradio fosphor block (GPU spectrum display)
+
+gr-gsm/oldstable 0.42.2.20200214-1+rpi1+b1 armhf
+  Gnuradio blocks and tools for receiving GSM transmissions
+
+gr-hpsdr/oldstable 1.2.1-2+b2 armhf
+  gnuradio interface module for OpenHPSDR protocol 1
+
+gr-iio/oldstable,now 0.3-9+b3 armhf [installed]
+  IIO blocks for GnuRadio
+
+gr-limesdr/oldstable 3.0.1-2+b5 armhf
+  LimeSDR blocks for GnuRadio
+
+gr-osmosdr/oldstable 0.2.2-1+b3 armhf
+  Gnuradio blocks from the OsmoSDR project
+
+gr-soapy/oldstable 2.1.3-2 armhf
+  SoapySDR blocks for GnuRadio
+
+inspectrum/oldstable 0.2.3-1 armhf
+  tool for visualising captured radio signals
+
+libair-modes1/oldstable 0.0.20190917-2+b4 armhf
+  Gnuradio Mode-S/ADS-B radio - library
+
+libgnuradio-analog3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio analog functions
+
+libgnuradio-audio3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio audio functions
+
+libgnuradio-blocks3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio blocks functions
+
+libgnuradio-channels3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio channels functions
+
+libgnuradio-dab3.8.0/oldstable 0.4-2+b6 armhf
+  Shared library for gr-dab (DAB/DAB+ receiver)
+
+libgnuradio-digital3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio digital communications functions
+
+libgnuradio-dtv3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio digital TV signal processing blocks
+
+libgnuradio-fcdproplus3.8.0/oldstable 3.8~20190817-3+b4 armhf
+  Funcube Dongle Pro Plus controller for GNU Radio (runtime)
+
+libgnuradio-fec3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio forward error correction support
+
+libgnuradio-fft3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio fast Fourier transform functions
+
+libgnuradio-filter3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio filter functions
+
+libgnuradio-fosphor3.8.0/oldstable 3.8~2.2d4fe78-1+b5 armhf
+  gnuradio fosphor block (GPU spectrum display) (library)
+
+libgnuradio-hpsdr1.2.1/oldstable 1.2.1-2+b2 armhf
+  gnuradio library for OpenHPSDR protocol 1
+
+libgnuradio-iio1/oldstable,now 0.3-9+b3 armhf [installed,automatic]
+  IIO blocks for GnuRadio (runtime library)
+
+libgnuradio-iqbalance3.8.0/oldstable 0.38-4+b4 armhf
+  GNU Radio Blind IQ imbalance estimator and correction (shared library)
+
+libgnuradio-limesdr3.0.1/oldstable 3.0.1-2+b5 armhf
+  LimeSDR blocks for GnuRadio (runtime library)
+
+libgnuradio-osmosdr0.2.0/oldstable 0.2.2-1+b3 armhf
+  Gnuradio blocks from the OsmoSDR project - library
+
+libgnuradio-pmt3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio pmt container library
+
+libgnuradio-qtgui3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio Qt graphical user interface functions
+
+libgnuradio-radar1.0.0/oldstable 0.0.0.20180308-4+b5 armhf
+  GNU Radio Radar Toolbox - library
+
+libgnuradio-rds1/oldstable 3.8.0.0.f1c584a-3+b5 armhf
+  GNU Radio FM RDS/TMC Transceiver (library)
+
+libgnuradio-runtime3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio core runtime
+
+libgnuradio-satellites3.5.1/oldstable 3.5.1-2+b2 armhf
+  library of satellite telemetry signal decoders
+
+libgnuradio-soapy2.1.3/oldstable 2.1.3-2 armhf
+  SoapySDR blocks for GnuRadio (runtime library)
+
+libgnuradio-trellis3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio trellis modulation functions
+
+libgnuradio-uhd3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio universal hardware driver functions
+
+libgnuradio-video-sdl3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio video functions
+
+libgnuradio-vocoder3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio vocoder functions
+
+libgnuradio-wavelet3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio wavelet functions
+
+libgnuradio-zeromq3.8.2/oldstable,now 3.8.2.0-14 armhf [installed,automatic]
+  gnuradio zeromq functions
+/////////////////////////////////////////////
+analog@analog:~/gr-iio/build $ apt-cache policy libiio
+N: Unable to locate package libiio
+///////////////////////////////////////////////////////////////////////////
+analog@analog:~/gr-iio/build $ apt-cache policy gnuradio
+gnuradio:
+  Installed: 3.8.2.0-14
+  Candidate: 3.8.2.0-14
+  Version table:
+ *** 3.8.2.0-14 500
+        500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
+        100 /var/lib/dpkg/status
+/////////////////////////////////////////////////////////////////
