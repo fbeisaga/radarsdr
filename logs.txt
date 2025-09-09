@@ -11,7 +11,24 @@ sed -i "s/^import iio$/from gnuradio import iio as iio_gn/" FM_BEISAGAv1.py
 sed -i "s/\biio\./iio_gn./g" FM_BEISAGAv1.py
 
 python3 FM_BEISAGAv1.py
-////////////////////////////////////////////////////////////////////////////////////7777777
+///////////////////////////////////////////////////////////////
+analog@analog:~/gr-iio/build $ python3 -c "import iio; print('iio desde:', getattr(iio,'__file__',str(iio)))"
+iio desde: /usr/local/lib/python3.9/dist-packages/iio.py
+analog@analog:~/gr-iio/build $ python3 -c "from gnuradio import iio as giio; print('gnuradio.iio disponible:', getattr(giio,'__file__',str(giio))); print('contiene fmcomms5?', 'fmcomms5_source_f32c' in dir(giio))"
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ImportError: cannot import name 'iio' from 'gnuradio' (/usr/lib/python3/dist-packages/gnuradio/__init__.py)
+
+
+/////////////////////////////////////////////////////////////////////////////analog@analog:~/gr-iio/build $ python3 -c "import iio; print('iio desde:', getattr(iio,'__file__',str(iio)))"
+iio desde: /usr/local/lib/python3.9/dist-packages/iio.py
+analog@analog:~/gr-iio/build $ python3 -c "from gnuradio import iio as giio; print('gnuradio.iio disponible:', getattr(giio,'__file__',str(giio))); print('contiene fmcomms5?', 'fmcomms5_source_f32c' in dir(giio))"
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ImportError: cannot import name 'iio' from 'gnuradio' (/usr/lib/python3/dist-packages/gnuradio/__init__.py)
+
 Generating: '/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py'
 
 Executing: /usr/bin/python3 -u /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
@@ -414,4 +431,5 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
 
