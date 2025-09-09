@@ -198,3 +198,16 @@ Call Stack (most recent call first):
 See also "/home/analog/gr-iio/build/CMakeFiles/CMakeOutput.log".
 See also "/home/analog/gr-iio/build/CMakeFiles/CMakeError.log".
 
+--------------------------------------------------------------------------
+
+gnuradio-config-info --version
+gnuradio-config-info --enabled-components | grep iio || true
+which make || make --version 2>/dev/null || echo "make no encontrado"
+
+sudo apt update
+sudo apt install -y build-essential cmake git pkg-config \
+ libiio-dev libad9361-dev libthrift-dev thrift-compiler python3-thrift \
+ gnuradio-dev gnuradio python3-dev swig doxygen libboost-all-dev
+
+
+
