@@ -47,3 +47,16 @@ Traceback (most recent call last):
   File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 141, in __init__
     self.iio_fmcomms5_source_0 = iio.fmcomms5_source_f32c('local:', frecuencia, 2400000000, samp_rate, 20000000, True, False, False, False, 32768, True, True, True, 'slow_attack', 64, 'fast_attack', 64, 'manual', 64, 'manual', 64, 'A_BALANCED', '')
 AttributeError: module 'iio' has no attribute 'fmcomms5_source_f32c'
+
+-------------------RESPONSE-----------------------------------------------------------------------------------------------
+sudo apt-get update
+sudo apt-get install libiio-dev libad9361-dev
+git clone https://github.com/analogdevicesinc/gr-iio.git
+cd gr-iio
+mkdir build && cd build
+cmake ..
+make -j4
+sudo make install
+sudo ldconfig
+
+
