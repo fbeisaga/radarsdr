@@ -1,3 +1,85 @@
+mpresslevel 3 -quality 5
+11/09/2025 23:44:54 passing arg to libvncserver: -rfbport
+11/09/2025 23:44:54 passing arg to libvncserver: 5900
+11/09/2025 23:44:54 passing arg to libvncserver: -depth
+11/09/2025 23:44:54 passing arg to libvncserver: 24
+11/09/2025 23:44:54 passing arg to libvncserver: -compresslevel
+11/09/2025 23:44:54 passing arg to libvncserver: 3
+11/09/2025 23:44:54 passing arg to libvncserver: -quality
+11/09/2025 23:44:54 passing arg to libvncserver: 5
+11/09/2025 23:44:54 -usepw: found /home/analog/.vnc/passwd
+11/09/2025 23:44:54 x11vnc version: 0.9.16 lastmod: 2019-01-05  pid: 25133
+11/09/2025 23:44:54 Using X display :0
+11/09/2025 23:44:54 rootwin: 0x531 reswin: 0x1c00001 dpy: 0x395440
+11/09/2025 23:44:54 
+11/09/2025 23:44:54 ------------------ USEFUL INFORMATION ------------------
+11/09/2025 23:44:54 
+11/09/2025 23:44:54 XFIXES available on display, resetting cursor mode
+11/09/2025 23:44:54   to: '-cursor most'.
+11/09/2025 23:44:54   to disable this behavior use: '-cursor arrow'
+11/09/2025 23:44:54   or '-noxfixes'.
+11/09/2025 23:44:54 using XFIXES for cursor drawing.
+11/09/2025 23:44:54 GrabServer control via XTEST.
+11/09/2025 23:44:54 
+11/09/2025 23:44:54 Scroll Detection: -scrollcopyrect mode is in effect to
+11/09/2025 23:44:54   use RECORD extension to try to detect scrolling windows
+11/09/2025 23:44:54   (induced by either user keystroke or mouse input).
+11/09/2025 23:44:54   If this yields undesired behavior (poor response, painting
+11/09/2025 23:44:54   errors, etc) it may be disabled via: '-noscr'
+11/09/2025 23:44:54   Also see the -help entry for tuning parameters.
+11/09/2025 23:44:54   You can press 3 Alt_L's (Left "Alt" key) in a row to 
+11/09/2025 23:44:54   repaint the screen, also see the -fixscreen option for
+11/09/2025 23:44:54   periodic repaints.
+11/09/2025 23:44:54   Note: '-scale' is on and this can cause more problems.
+11/09/2025 23:44:54 
+11/09/2025 23:44:54 Client Side Caching: -ncache mode is in effect to provide
+11/09/2025 23:44:54   client-side pixel data caching.  This speeds up
+11/09/2025 23:44:54   iconifying/deiconifying windows, moving and raising
+11/09/2025 23:44:54   windows, and reposting menus.  In the simple CopyRect
+11/09/2025 23:44:54   encoding scheme used (no compression) a huge amount
+11/09/2025 23:44:54   of extra memory (20-100MB) is used on both the server and
+11/09/2025 23:44:54   client sides.  This mode works with any VNC viewer.
+11/09/2025 23:44:54   However, in most you can actually see the cached pixel
+11/09/2025 23:44:54   data by scrolling down, so you need to re-adjust its size.
+11/09/2025 23:44:54   See http://www.karlrunge.com/x11vnc/faq.html#faq-client-caching.
+11/09/2025 23:44:54   If this mode yields undesired behavior (poor response,
+11/09/2025 23:44:54   painting errors, etc) it may be disabled via: '-ncache 0'
+11/09/2025 23:44:54   You can press 3 Alt_L's (Left "Alt" key) in a row to 
+11/09/2025 23:44:54   repaint the screen, also see the -fixscreen option for
+11/09/2025 23:44:54   periodic repaints.
+11/09/2025 23:44:54   Note: '-scale' is on and this can cause more problems.
+11/09/2025 23:44:54 X FBPM extension not supported.
+11/09/2025 23:44:54 X display is capable of DPMS.
+11/09/2025 23:44:54 --------------------------------------------------------
+11/09/2025 23:44:54 
+11/09/2025 23:44:54 Default visual ID: 0x21
+11/09/2025 23:44:54 Read initial data from X display into framebuffer.
+11/09/2025 23:44:54 initialize_screen: fb_depth/fb_bpp/fb_Bpl 24/32/6400
+11/09/2025 23:44:54 scaling screen: 1600x900 -> 1024x768
+11/09/2025 23:44:54 scaling screen: scale_fac_x=0.64000 scale_fac_y=0.85333
+11/09/2025 23:44:54 *** unrecognized option(s) ***
+11/09/2025 23:44:54 	[1]  -depth
+11/09/2025 23:44:54 	[2]  24
+11/09/2025 23:44:54 	[3]  -compresslevel
+11/09/2025 23:44:54 	[4]  3
+11/09/2025 23:44:54 	[5]  -quality
+11/09/2025 23:44:54 	[6]  5
+11/09/2025 23:44:54 For a list of options run: x11vnc -opts
+11/09/2025 23:44:54 or for the full help: x11vnc -help
+11/09/2025 23:44:54 
+11/09/2025 23:44:54 Here is a list of removed or obsolete options:
+11/09/2025 23:44:54 
+11/09/2025 23:44:54 removed: -hints, -nohints
+11/09/2025 23:44:54 removed: -cursorposall
+11/09/2025 23:44:54 removed: -nofilexfer, now the default.
+11/09/2025 23:44:54 
+11/09/2025 23:44:54 renamed: -old_copytile, use -onetile
+11/09/2025 23:44:54 renamed: -mouse,   use -cursor
+11/09/2025 23:44:54 renamed: -mouseX,  use -cursor X
+11/09/2025 23:44:54 renamed: -X,       use -cursor X
+11/09/2025 23:44:54 renamed: -nomouse, use -nocursor
+11/09/2025 23:44:54 renamed: -old_pointer, use -pointer_mode 1
+----------------------------*----------------------------------
 analog@analog:~ $ vncserver :1 -geometry 1600x900 -depth 24 -localhost no -verbose
 Starting /usr/bin/Xtigervnc :1 -rfbport 5901 -localhost=0 -SecurityTypes VncAuth,TLSVnc -PasswordFile /home/analog/.vnc/passwd -ClientWaitTimeMillis 30000 -geometry 1600x900 -desktop analog:1 (analog) -depth 24 -auth /home/analog/.Xauthority
 
@@ -550,6 +632,7 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
 
 
 
