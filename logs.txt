@@ -1,3 +1,31 @@
+analog@analog:~ $ tail -n 80 /tmp/x11vnc.log
+12/09/2025 00:14:56 passing arg to libvncserver: -rfbport
+12/09/2025 00:14:56 passing arg to libvncserver: 5900
+Enter VNC password: 
+Verify password:    
+** passwords differ.
+x11vnc -usepw: could not find a password to use.
+
+
+
+
+analog@analog:~ $ top -b -n 1 | head -n 12
+top - 00:19:39 up  5:56,  2 users,  load average: 0.00, 0.06, 0.08
+Tasks: 162 total,   1 running, 161 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.5 us,  9.5 sy,  0.0 ni, 81.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :    990.3 total,     88.3 free,    439.9 used,    462.1 buff/cache
+MiB Swap:    100.0 total,      0.0 free,    100.0 used.    368.2 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+25291 analog    20   0   11208   2984   2616 R  21.1   0.3   0:00.08 top
+  655 root      20   0  406124  65888  44836 S   5.3   6.5   3:51.70 Xorg
+ 3021 analog    20   0  703520 119732  83388 S   5.3  11.8   2:13.02 chromium-browse
+    1 root      20   0   34940   7204   5464 S   0.0   0.7   0:16.01 systemd
+    2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+
+
+--------
+
 mpresslevel 3 -quality 5
 11/09/2025 23:44:54 passing arg to libvncserver: -rfbport
 11/09/2025 23:44:54 passing arg to libvncserver: 5900
@@ -632,6 +660,7 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
 
 
 
