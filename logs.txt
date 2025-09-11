@@ -1,3 +1,26 @@
+analog@analog:~ $ vncserver :1 -geometry 1600x900 -depth 24 -localhost no -verbose
+Starting /usr/bin/Xtigervnc :1 -rfbport 5901 -localhost=0 -SecurityTypes VncAuth,TLSVnc -PasswordFile /home/analog/.vnc/passwd -ClientWaitTimeMillis 30000 -geometry 1600x900 -desktop analog:1 (analog) -depth 24 -auth /home/analog/.Xauthority
+
+New Xtigervnc server 'analog:1 (analog)' on port 5901 for display :1.
+Use xtigervncviewer -SecurityTypes VncAuth,TLSVnc -passwd /home/analog/.vnc/passwd analog:1 to connect to the VNC server.
+
+Starting session via '/home/analog/.vnc/xstartup'
+Log file is /home/analog/.vnc/analog:5901.log
+
+
+=================== tail /home/analog/.vnc/analog:5901.log ===================
+xrdb: No such file or directory
+xrdb: can't open file '/home/analog/.Xresources'
+==============================================================================
+
+Session startup via '/home/analog/.vnc/xstartup' cleanly exited too early (< 3 seconds)!
+
+Maybe try something simple first, e.g.,
+	tigervncserver -xstartup /usr/bin/xterm
+The X session cleanly exited!
+Killing Xtigervnc process ID 24384... success!
+----------------------------------------------------
+
 analog@analog:~ $ cat ~/.vnc/*:1.log
 11/09/25 21:01:34 Xvnc version TightVNC-1.3.10
 11/09/25 21:01:34 Copyright (C) 2000-2009 TightVNC Group
@@ -527,6 +550,7 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
 
 
 
