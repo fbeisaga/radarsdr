@@ -1,3 +1,35 @@
+Generating: '/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py'
+
+Executing: /usr/bin/python3 -u /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
+
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Unable to write attribute out_altvoltage0_RX_LO_frequency: -13
+Unable to write attribute in_voltage_sampling_frequency: -13
+Unable to write attribute in_voltage_rf_bandwidth: -13
+Unable to write attribute in_voltage_quadrature_tracking_en: -13
+Unable to write attribute in_voltage_rf_dc_offset_tracking_en: -13
+Unable to write attribute in_voltage_bb_dc_offset_tracking_en: -13
+Unable to write attribute in_voltage0_gain_control_mode: -13
+Unable to write attribute in_voltage0_hardwaregain: -13
+Unable to write attribute in_voltage1_gain_control_mode: -13
+Unable to write attribute in_voltage1_hardwaregain: -13
+Unable to write attribute in_voltage0_rf_port_select: -13
+Unable to write attribute out_altvoltage0_RX_LO_frequency: -13
+Unable to write attribute in_voltage_sampling_frequency: -13
+Unable to write attribute in_voltage_rf_bandwidth: -13
+Unable to write attribute in_voltage_quadrature_tracking_en: -13
+Unable to write attribute in_voltage_rf_dc_offset_tracking_en: -13
+Unable to write attribute in_voltage_bb_dc_offset_tracking_en: -13
+Unable to write attribute in_voltage0_gain_control_mode: -13
+Unable to write attribute in_voltage0_hardwaregain: -13
+Unable to write attribute in_voltage1_gain_control_mode: -13
+Unable to write attribute in_voltage1_hardwaregain: -13
+Unable to write attribute in_voltage0_rf_port_select: -13
+gr::log :INFO: audio source - Audio sink arch: alsa
+thread[thread-per-block[0]: <block fmcomms5_source(5)>]: Unable to create buffer!
+
 Section "Monitor"
     Identifier "Monitor0"
     Option "PreferredMode" "1600x900"
@@ -690,6 +722,7 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
 
 
 
