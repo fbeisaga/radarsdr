@@ -1,0 +1,70 @@
+estoy haciendo un receptor fm con el bloque fmcomms5 en gnu radio pero obtengo este error
+Generating: '/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py'
+
+Executing: /usr/bin/python3 -u /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
+
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Unable to write attribute out_altvoltage0_RX_LO_frequency: -13
+Unable to write attribute in_voltage_sampling_frequency: -13
+Unable to write attribute in_voltage_rf_bandwidth: -13
+Unable to write attribute in_voltage_quadrature_tracking_en: -13
+Unable to write attribute in_voltage_rf_dc_offset_tracking_en: -13
+Unable to write attribute in_voltage_bb_dc_offset_tracking_en: -13
+Unable to write attribute in_voltage0_gain_control_mode: -13
+Unable to write attribute in_voltage0_hardwaregain: -13
+Unable to write attribute in_voltage1_gain_control_mode: -13
+Unable to write attribute in_voltage1_hardwaregain: -13
+Unable to write attribute in_voltage0_rf_port_select: -13
+Unable to write attribute out_altvoltage0_RX_LO_frequency: -13
+Unable to write attribute in_voltage_sampling_frequency: -13
+Unable to write attribute in_voltage_rf_bandwidth: -13
+Unable to write attribute in_voltage_quadrature_tracking_en: -13
+Unable to write attribute in_voltage_rf_dc_offset_tracking_en: -13
+Unable to write attribute in_voltage_bb_dc_offset_tracking_en: -13
+Unable to write attribute in_voltage0_gain_control_mode: -13
+Unable to write attribute in_voltage0_hardwaregain: -13
+Unable to write attribute in_voltage1_gain_control_mode: -13
+Unable to write attribute in_voltage1_hardwaregain: -13
+Unable to write attribute in_voltage0_rf_port_select: -13
+gr::log :INFO: audio source - Audio sink arch: alsa
+thread[thread-per-block[0]: <block fmcomms5_source(5)>]: Unable to create buffer!
+
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+
+
+analog@analog:~ $ sudo /usr/bin/python3 -u /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
+[sudo] password for analog:
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Traceback (most recent call last): File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 217, in <module> main()
+File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 193, in main tb = top_block_cls()
+File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 141, in __init__ self.iio_fmcomms5_source_0 = iio.fmcomms5_source_f32c('local:', frecuencia, 2400000000, samp_rate, 20000000, True, False, False, False, 32768, True, True, True, 'manual', 64, 'fast_attack', 64, 'manual', 64, 'manual', 64, 'A_BALANCED', '')
+AttributeError: module 'iio' has no attribute 'fmcomms5_source_f32c'
+
+Me sale esto
+
+
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+python3 - <<'PY'
+import iio, inspect
+print("iio file:", getattr(iio, "__file__", "built-in or no __file__"))
+print("iio module repr:", iio)
+print("some names in iio:", sorted([n for n in dir(iio) if not n.startswith("_")])[:60])
+try:
+    print("has fmcomms5_source_f32c?:", hasattr(iio, "fmcomms5_source_f32c"))
+except Exception as e:
+    print("error checking attr:", e)
+PY
+
+# comprueba si hay librerías gr-iio en python3 site-packages
+python3 -c "import pkgutil, sys; print([m.name for m in pkgutil.iter_modules() if 'iio' in m.name or 'gr_iio' in m.name])"
+# busca paquetes instalados por dpkg
+dpkg -l | grep -i gr-iio || true
+
+pip3 show pyadi-iio || true
+pip3 show libiio || true
+
