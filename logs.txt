@@ -15,7 +15,14 @@ Section "Screen"
 EndSection
 
 
+Generating: '/home/analog/.grc_gnuradio/top_block.py'
 
+Executing: /usr/bin/python3 -u /home/analog/.grc_gnuradio/top_block.py
+
+  File "/home/analog/.grc_gnuradio/top_block.py", line 27
+    def __init__(self, audio_device="dmix:CARD=monitor,DEV=0", decimation=1, fm_station=99700000, hostname=127.0.0.1, uri="local:"):
+                                                                                                                ^
+SyntaxError: invalid syntax
 
 
 
@@ -683,6 +690,7 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
 
 
 
