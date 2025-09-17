@@ -168,3 +168,30 @@ PY
 4 /usr/local/lib/python3.9/dist-packages
 5 /usr/lib/python3/dist-packages
 6 /usr/lib/python3.9/dist-packages
+
+--------------RESPUESTA----------------
+sudo mkdir -p /root/iio_backups
+sudo mv /usr/local/lib/python3.9/dist-packages/iio.py /root/iio_backups/iio.py.backup
+# si existe un paquete iio (carpeta) también muévelo
+if [ -d /usr/local/lib/python3.9/dist-packages/iio ]; then
+  sudo mv /usr/local/lib/python3.9/dist-packages/iio /root/iio_backups/iio_pkg_backup
+fi
+
+
+python3 - <<'PY'
+import iio, sys
+print("iio.__file__ =", getattr(iio, "__file__", None))
+print("has fmcomms5_source_f32c?:", hasattr(iio, "fmcomms5_source_f32c"))
+print("sys.path (first 6):", sys.path[:6])
+PY
+
+/usr/bin/python3 /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
+
+#RESTAURAR PAQUETE PIP
+sudo mv /root/iio_backups/iio.py.backup /usr/local/lib/python3.9/dist-packages/iio.py
+# y la carpeta si la habías movido
+sudo mv /root/iio_backups/iio_pkg_backup /usr/local/lib/python3.9/dist-packages/iio
+
+
+
+
