@@ -1,3 +1,22 @@
+analog@analog:~ $ sudo /usr/bin/python3 -u /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
+[sudo] password for analog: 
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Traceback (most recent call last):
+  File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 217, in <module>
+    main()
+  File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 193, in main
+    tb = top_block_cls()
+  File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 141, in __init__
+    self.iio_fmcomms5_source_0 = iio.fmcomms5_source_f32c('local:', frecuencia, 2400000000, samp_rate, 20000000, True, False, False, False, 32768, True, True, True, 'manual', 64, 'fast_attack', 64, 'manual', 64, 'manual', 64, 'A_BALANCED', '')
+AttributeError: module 'iio' has no attribute 'fmcomms5_source_f32c'
+
+
+vv
+
+
 Generating: '/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py'
 
 Executing: /usr/bin/python3 -u /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
@@ -722,6 +741,7 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
 
 
 
