@@ -90,3 +90,81 @@ Required-by:
 pip3 show libiio || true
 WARNING: Package(s) not found: libiio
 
+ssssssssssssssssssssssssssssssssssssssssssssssss
+
+analog@analog:~ $ python3 - <<'PY'
+import iio, sys
+print("iio file:",getattr(iio, "__file__",None))
+print("has fmcomms5_source_f32c?:", hasattr(iio,"fmcomms5_source_f32c"))
+PY                                       
+iio file: /usr/local/lib/python3.9/dist-packages/iio.py
+has fmcomms5_source_f32c?: False
+analog@analog:~ $ dpkg -L gr-iio | sed -n '1,200p' | grep -i "python\|iio" || true
+/usr/include/iio
+/usr/include/iio/api.h
+/usr/include/iio/attr_sink.h
+/usr/include/iio/attr_source.h
+/usr/include/iio/converter_ss.h
+/usr/include/iio/device_sink.h
+/usr/include/iio/device_source.h
+/usr/include/iio/fmcomms2_sink.h
+/usr/include/iio/fmcomms2_source.h
+/usr/include/iio/fmcomms5_sink.h
+/usr/include/iio/fmcomms5_source.h
+/usr/include/iio/iio
+/usr/include/iio/iio/swig
+/usr/include/iio/iio/swig/iio_pluto_sink_swig.i
+/usr/include/iio/iio/swig/iio_pluto_source_swig.i
+/usr/include/iio/iio/swig/iio_swig.i
+/usr/include/iio/math.h
+/usr/include/iio/modulo_const_ff.h
+/usr/include/iio/modulo_ff.h
+/usr/include/iio/pluto_sink.h
+/usr/include/iio/pluto_source.h
+/usr/include/iio/power_ff.h
+/usr/lib/arm-linux-gnueabihf/cmake/iio
+/usr/lib/arm-linux-gnueabihf/cmake/iio/gnuradio-iioConfig.cmake
+/usr/lib/arm-linux-gnueabihf/cmake/iio/gnuradio-iioTargets-none.cmake
+/usr/lib/arm-linux-gnueabihf/cmake/iio/gnuradio-iioTargets.cmake
+/usr/lib/arm-linux-gnueabihf/cmake/iio/iioConfig.cmake
+/usr/lib/arm-linux-gnueabihf/pkgconfig/gnuradio-iio.pc
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/iio
+/usr/lib/python3/dist-packages/iio/__init__.py
+/usr/lib/python3/dist-packages/iio/_iio_pluto_sink_swig.cpython-39-arm-linux-gnueabihf.so
+/usr/lib/python3/dist-packages/iio/_iio_pluto_source_swig.cpython-39-arm-linux-gnueabihf.so
+/usr/lib/python3/dist-packages/iio/_iio_swig.cpython-39-arm-linux-gnueabihf.so
+/usr/lib/python3/dist-packages/iio/attr_updater.py
+/usr/lib/python3/dist-packages/iio/iio_pluto_sink_swig.py
+/usr/lib/python3/dist-packages/iio/iio_pluto_source_swig.py
+/usr/lib/python3/dist-packages/iio/iio_swig.py
+/usr/share/doc/gr-iio
+/usr/share/doc/gr-iio/changelog.Debian.armhf.gz
+/usr/share/doc/gr-iio/changelog.Debian.gz
+/usr/share/doc/gr-iio/copyright
+/usr/share/gnuradio/grc/blocks/iio.tree.yml
+/usr/share/gnuradio/grc/blocks/iio_attr_sink.block.yml
+/usr/share/gnuradio/grc/blocks/iio_attr_source.block.yml
+/usr/share/gnuradio/grc/blocks/iio_attr_updater.block.yml
+/usr/share/gnuradio/grc/blocks/iio_device_sink.block.yml
+/usr/share/gnuradio/grc/blocks/iio_device_source.block.yml
+/usr/share/gnuradio/grc/blocks/iio_fmcomms2_sink.block.yml
+/usr/share/gnuradio/grc/blocks/iio_fmcomms2_source.block.yml
+/usr/share/gnuradio/grc/blocks/iio_fmcomms5_sink.block.yml
+/usr/share/gnuradio/grc/blocks/iio_fmcomms5_source.block.yml
+/usr/share/gnuradio/grc/blocks/iio_pluto_sink.block.yml
+/usr/share/gnuradio/grc/blocks/iio_pluto_source.block.yml
+/usr/lib/arm-linux-gnueabihf/libgnuradio-iio.so
+analog@analog:~ $ python3 - <<'PY'                                                
+import sys
+for i,p in enumerate(sys.path[:10]):
+     print(i, p)
+PY
+0 
+1 /usr/lib/python39.zip
+2 /usr/lib/python3.9
+3 /usr/lib/python3.9/lib-dynload
+4 /usr/local/lib/python3.9/dist-packages
+5 /usr/lib/python3/dist-packages
+6 /usr/lib/python3.9/dist-packages
