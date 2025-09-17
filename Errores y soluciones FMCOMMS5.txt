@@ -192,6 +192,30 @@ sudo mv /root/iio_backups/iio.py.backup /usr/local/lib/python3.9/dist-packages/i
 # y la carpeta si la habías movido
 sudo mv /root/iio_backups/iio_pkg_backup /usr/local/lib/python3.9/dist-packages/iio
 
+----------------------------RESPUESTA---------------
+Generating: '/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py'
 
+Executing: /usr/bin/python3 -u /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
+
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Parsing /proc/self/auxv to extract ELF hwcaps!
+Unable to write attribute in_voltage0_hardwaregain: -95
+Unable to write attribute in_voltage1_hardwaregain: -95
+gr::log :INFO: audio source - Audio sink arch: alsa
+gr::log :ERROR: audio_alsa_sink0 - [default]: Device or resource busy
+Traceback (most recent call last):
+  File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 217, in <module>
+    main()
+  File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 193, in main
+    tb = top_block_cls()
+  File "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py", line 142, in __init__
+    self.audio_sink_0 = audio.sink(48000, '', True)
+  File "/usr/lib/python3/dist-packages/gnuradio/audio/audio_swig.py", line 182, in make
+    return _audio_swig.sink_make(*args, **kwargs)
+RuntimeError: audio_alsa_sink
+
+Esto se obtiene al hacer lo anterior
 
 
