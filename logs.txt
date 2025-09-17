@@ -1,3 +1,26 @@
+Section "Monitor"
+    Identifier "Monitor0"
+    Option "PreferredMode" "1600x900"
+EndSection
+
+Section "Screen"
+    Identifier "Screen0"
+    Device     "Card0"
+    Monitor    "Monitor0"
+    DefaultDepth 24
+    SubSection "Display"
+        Depth     24
+        Modes     "1600x900"
+    EndSubSection
+EndSection
+
+
+
+
+
+
+
+
 analog@analog:~ $ tail -n 80 /tmp/x11vnc.log
 12/09/2025 00:14:56 passing arg to libvncserver: -rfbport
 12/09/2025 00:14:56 passing arg to libvncserver: 5900
@@ -660,6 +683,7 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
 
 
 
