@@ -59,12 +59,34 @@ try:
 except Exception as e:
     print("error checking attr:", e)
 PY
+------------------RESPUESTA--------------
+some names in iio: ['Buffer', 'Channel', 'ChannelAttr', 'ChannelModifier', 'ChannelType', 'Context', 'DataFormat', 'Device', 'DeviceAttr', 'DeviceBufferAttr', 'DeviceDebugAttr', 'Enum', 'LocalContext', 'NetworkContext', 'Structure', 'Trigger', 'XMLContext', 'abc', 'backends', 'c_bool', 'c_char', 'c_char_p', 'c_double', 'c_int', 'c_long', 'c_longlong', 'c_size_t', 'c_ssize_t', 'c_uint', 'c_void_p', 'cast', 'create_string_buffer', 'find_library', 'get_errno', 'iio_strerror', 'scan_contexts', 'version']
+has fmcomms5_source_f32c?: False
+
 
 # comprueba si hay librerías gr-iio en python3 site-packages
 python3 -c "import pkgutil, sys; print([m.name for m in pkgutil.iter_modules() if 'iio' in m.name or 'gr_iio' in m.name])"
+----RESPUESTA------
+['iio']
+
 # busca paquetes instalados por dpkg
 dpkg -l | grep -i gr-iio || true
+-------RESPUESTA----
+ii  gr-iio                                 0.3-9+b3    armhf        IIO blocks for GnuRadio
 
 pip3 show pyadi-iio || true
+--------------RESPUESTA-----------------------
+Name: pyadi-iio
+Version: 0.0.19
+Summary: Analog Devices python interfaces for hardware with Industrial I/O drivers
+Home-page: None
+Author: None
+Author-email: Travis Collins <travis.collins@analog.com>
+License: ADI BSD
+Location: /usr/local/lib/python3.9/dist-packages
+Requires: numpy, pylibiio
+Required-by: 
+
 pip3 show libiio || true
+WARNING: Package(s) not found: libiio
 
