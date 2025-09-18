@@ -1,0 +1,852 @@
+analog@analog:~ $ iio_info
+iio_info version: 0.26 (git tag:5e1e9cb5)
+Libiio version: 0.26 (git tag: 5e1e9cb) backends: local xml ip usb serial
+IIO context created with local backend.
+Backend version: 0.26 (git tag: 5e1e9cb)
+Backend description string: Linux analog 6.1.70-284114-g2e8908932dfd #1060 SMP PREEMPT Tue Mar 18 16:11:24 EET 2025 armv7l
+IIO context has 9 attributes:
+	hdl_system_id: [fmcomms5] on [zc706] git branch [hdl_2023_r2] git [2156ac7e874a1dc321d9f64a325009fafe563419] clean [2024-11-01 09:10:19] UTC
+	hw_model: AD-FMCOMMS5-EBZ on Xilinx Zynq ZC706
+	hw_carrier: Xilinx Zynq ZC706
+	hw_mezzanine: AD-FMCOMMS5-EBZ
+	hw_name: AD9361 MIMO EVAL/SOFTWARE DEV KIT
+	hw_vendor: ANALOG DEVICES
+	hw_serial: 00054
+	local,kernel: 6.1.70-284114-g2e8908932dfd
+	uri: local:
+IIO context has 9 devices:
+	iio:device0: ad7291
+		9 channels found:
+			voltage6:  (input)
+			2 channel-specific attributes found:
+				attr  0: raw value: 1309
+				attr  1: scale value: 0.610351562
+			temp0:  (input)
+			3 channel-specific attributes found:
+				attr  0: mean_raw value: 157
+				attr  1: raw value: 156
+				attr  2: scale value: 250
+			voltage3:  (input)
+			2 channel-specific attributes found:
+				attr  0: raw value: 3655
+				attr  1: scale value: 0.610351562
+			voltage7:  (input)
+			2 channel-specific attributes found:
+				attr  0: raw value: 1298
+				attr  1: scale value: 0.610351562
+			voltage0:  (input)
+			2 channel-specific attributes found:
+				attr  0: raw value: 1814
+				attr  1: scale value: 0.610351562
+			voltage4:  (input)
+			2 channel-specific attributes found:
+				attr  0: raw value: 1310
+				attr  1: scale value: 0.610351562
+			voltage1:  (input)
+			2 channel-specific attributes found:
+				attr  0: raw value: 3328
+				attr  1: scale value: 0.610351562
+			voltage5:  (input)
+			2 channel-specific attributes found:
+				attr  0: raw value: 1305
+				attr  1: scale value: 0.610351562
+			voltage2:  (input)
+			2 channel-specific attributes found:
+				attr  0: raw value: 3326
+				attr  1: scale value: 0.610351562
+		1 device-specific attributes found:
+				attr  0: waiting_for_supplier value: 0
+		No trigger on this device
+	iio:device1: ad9361-phy
+		11 channels found:
+			altvoltage1: TX_LO (output)
+			9 channel-specific attributes found:
+				attr  0: external value: 0
+				attr  1: fastlock_load value: 0
+				attr  2: fastlock_recall ERROR: Invalid argument (22)
+				attr  3: fastlock_save value: 0 172,240,72,208,194,194,71,200,116,221,196,229,227,194,228,253
+				attr  4: fastlock_store value: 0
+				attr  5: frequency value: 2400000000
+				attr  6: frequency_available value: [46875001 1 6000000000]
+				attr  7: label value: TX_LO
+				attr  8: powerdown value: 0
+			voltage1:  (output)
+			10 channel-specific attributes found:
+				attr  0: filter_fir_en value: 0
+				attr  1: hardwaregain value: -10.000000 dB
+				attr  2: hardwaregain_available value: [-89.750000 0.250000 0.000000]
+				attr  3: rf_bandwidth value: 18000000
+				attr  4: rf_bandwidth_available value: [200000 1 40000000]
+				attr  5: rf_port_select value: A
+				attr  6: rf_port_select_available value: A B
+				attr  7: rssi value: 0.00 dB
+				attr  8: sampling_frequency value: 30720000
+				attr  9: sampling_frequency_available value: [2083333 1 61440000]
+			voltage0:  (input)
+			15 channel-specific attributes found:
+				attr  0: bb_dc_offset_tracking_en value: 1
+				attr  1: filter_fir_en value: 0
+				attr  2: gain_control_mode value: slow_attack
+				attr  3: gain_control_mode_available value: manual fast_attack slow_attack hybrid
+				attr  4: hardwaregain value: 71.000000 dB
+				attr  5: hardwaregain_available value: [-3 1 71]
+				attr  6: quadrature_tracking_en value: 1
+				attr  7: rf_bandwidth value: 18000000
+				attr  8: rf_bandwidth_available value: [200000 1 56000000]
+				attr  9: rf_dc_offset_tracking_en value: 1
+				attr 10: rf_port_select value: A_BALANCED
+				attr 11: rf_port_select_available value: A_BALANCED B_BALANCED C_BALANCED A_N A_P B_N B_P C_N C_P TX_MONITOR1 TX_MONITOR2 TX_MONITOR1_2
+				attr 12: rssi value: 103.75 dB
+				attr 13: sampling_frequency value: 30720000
+				attr 14: sampling_frequency_available value: [2083333 1 61440000]
+			voltage1:  (input)
+			15 channel-specific attributes found:
+				attr  0: bb_dc_offset_tracking_en value: 1
+				attr  1: filter_fir_en value: 0
+				attr  2: gain_control_mode value: slow_attack
+				attr  3: gain_control_mode_available value: manual fast_attack slow_attack hybrid
+				attr  4: hardwaregain value: 69.000000 dB
+				attr  5: hardwaregain_available value: [-3 1 71]
+				attr  6: quadrature_tracking_en value: 1
+				attr  7: rf_bandwidth value: 18000000
+				attr  8: rf_bandwidth_available value: [200000 1 56000000]
+				attr  9: rf_dc_offset_tracking_en value: 1
+				attr 10: rf_port_select value: A_BALANCED
+				attr 11: rf_port_select_available value: A_BALANCED B_BALANCED C_BALANCED A_N A_P B_N B_P C_N C_P TX_MONITOR1 TX_MONITOR2 TX_MONITOR1_2
+				attr 12: rssi value: 92.00 dB
+				attr 13: sampling_frequency value: 30720000
+				attr 14: sampling_frequency_available value: [2083333 1 61440000]
+			voltage3:  (output)
+			8 channel-specific attributes found:
+				attr  0: filter_fir_en value: 0
+				attr  1: raw value: 306
+				attr  2: rf_bandwidth value: 18000000
+				attr  3: rf_bandwidth_available value: [200000 1 40000000]
+				attr  4: rf_port_select_available value: A B
+				attr  5: sampling_frequency value: 30720000
+				attr  6: sampling_frequency_available value: [2083333 1 61440000]
+				attr  7: scale value: 1.000000
+			altvoltage0: RX_LO (output)
+			9 channel-specific attributes found:
+				attr  0: external value: 0
+				attr  1: fastlock_load value: 0
+				attr  2: fastlock_recall ERROR: Invalid argument (22)
+				attr  3: fastlock_save value: 0 90,215,17,187,134,15,145,18,2,2,229,10,47,18,95,239
+				attr  4: fastlock_store value: 0
+				attr  5: frequency value: 2400000000
+				attr  6: frequency_available value: [70000000 1 6000000000]
+				attr  7: label value: RX_LO
+				attr  8: powerdown value: 0
+			voltage2:  (output)
+			8 channel-specific attributes found:
+				attr  0: filter_fir_en value: 0
+				attr  1: raw value: 306
+				attr  2: rf_bandwidth value: 18000000
+				attr  3: rf_bandwidth_available value: [200000 1 40000000]
+				attr  4: rf_port_select_available value: A B
+				attr  5: sampling_frequency value: 30720000
+				attr  6: sampling_frequency_available value: [2083333 1 61440000]
+				attr  7: scale value: 1.000000
+			temp0:  (input)
+			1 channel-specific attributes found:
+				attr  0: input value: 42982
+			voltage0:  (output)
+			10 channel-specific attributes found:
+				attr  0: filter_fir_en value: 0
+				attr  1: hardwaregain value: -10.000000 dB
+				attr  2: hardwaregain_available value: [-89.750000 0.250000 0.000000]
+				attr  3: rf_bandwidth value: 18000000
+				attr  4: rf_bandwidth_available value: [200000 1 40000000]
+				attr  5: rf_port_select value: A
+				attr  6: rf_port_select_available value: A B
+				attr  7: rssi value: 0.00 dB
+				attr  8: sampling_frequency value: 30720000
+				attr  9: sampling_frequency_available value: [2083333 1 61440000]
+			voltage2:  (input)
+			13 channel-specific attributes found:
+				attr  0: bb_dc_offset_tracking_en value: 1
+				attr  1: filter_fir_en value: 0
+				attr  2: gain_control_mode_available value: manual fast_attack slow_attack hybrid
+				attr  3: offset value: 57
+				attr  4: quadrature_tracking_en value: 1
+				attr  5: raw value: 995
+				attr  6: rf_bandwidth value: 18000000
+				attr  7: rf_bandwidth_available value: [200000 1 56000000]
+				attr  8: rf_dc_offset_tracking_en value: 1
+				attr  9: rf_port_select_available value: A_BALANCED B_BALANCED C_BALANCED A_N A_P B_N B_P C_N C_P TX_MONITOR1 TX_MONITOR2 TX_MONITOR1_2
+				attr 10: sampling_frequency value: 30720000
+				attr 11: sampling_frequency_available value: [2083333 1 61440000]
+				attr 12: scale value: 0.305250
+			out:  (input, WARN:iio_channel_get_type()=UNKNOWN)
+			1 channel-specific attributes found:
+				attr  0: voltage_filter_fir_en value: 0
+		19 device-specific attributes found:
+				attr  0: calib_mode value: auto
+				attr  1: calib_mode_available value: auto manual manual_tx_quad tx_quad rf_dc_offs rssi_gain_step
+				attr  2: dcxo_tune_coarse ERROR: No such device (19)
+				attr  3: dcxo_tune_coarse_available value: [0 0 0]
+				attr  4: dcxo_tune_fine ERROR: No such device (19)
+				attr  5: dcxo_tune_fine_available value: [0 0 0]
+				attr  6: ensm_mode value: fdd
+				attr  7: ensm_mode_available value: sleep wait alert fdd pinctrl pinctrl_fdd_indep
+				attr  8: filter_fir_config value: FIR Rx: 0,0 Tx: 0,0
+				attr  9: gain_table_config value: <gaintable AD9361 type=FULL dest=3 start=1300000000 end=4000000000>
+-3, 0x00, 0x00, 0x20
+-3, 0x00, 0x00, 0x00
+-3, 0x00, 0x00, 0x00
+-2, 0x00, 0x01, 0x00
+-1, 0x00, 0x02, 0x00
+0, 0x00, 0x03, 0x00
+1, 0x00, 0x04, 0x00
+2, 0x00, 0x05, 0x00
+3, 0x01, 0x03, 0x20
+4, 0x01, 0x04, 0x00
+5, 0x01, 0x05, 0x00
+6, 0x01, 0x06, 0x00
+7, 0x01, 0x07, 0x00
+8, 0x01, 0x08, 0x00
+9, 0x01, 0x09, 0x00
+10, 0x01, 0x0A, 0x00
+11, 0x01, 0x0B, 0x00
+12, 0x01, 0x0C, 0x00
+13, 0x01, 0x0D, 0x00
+14, 0x01, 0x0E, 0x00
+15, 0x02, 0x09, 0x20
+16, 0x02, 0x0A, 0x00
+17, 0x02, 0x0B, 0x00
+18, 0x02, 0x0C, 0x00
+19, 0x02, 0x0D, 0x00
+20, 0x02, 0x0E, 0x00
+21, 0x02, 0x0F, 0x00
+22, 0x02, 0x10, 0x00
+23, 0x02, 0x2B, 0x20
+24, 0x02, 0x2C, 0x00
+25, 0x04, 0x27, 0x20
+26, 0x04, 0x28, 0x00
+27, 0x04, 0x29, 0x00
+28, 0x04, 0x2A, 0x00
+29, 0x04, 0x2B, 0x00
+30, 0x24, 0x21, 0x20
+31, 0x24, 0x22, 0x00
+32, 0x44, 0x20, 0x20
+33, 0x44, 0x21, 0x00
+34, 0x44, 0x22, 0x00
+35, 0x44, 0x23, 0x00
+36, 0x44, 0x24, 0x00
+37, 0x44, 0x25, 0x00
+38, 0x44, 0x26, 0x00
+39, 0x44, 0x27, 0x00
+40, 0x44, 0x28, 0x00
+41, 0x44, 0x29, 0x00
+42, 0x44, 0x2A, 0x00
+43, 0x44, 0x2B, 0x00
+44, 0x44, 0x2C, 0x00
+45, 0x44, 0x2D, 0x00
+46, 0x44, 0x2E, 0x00
+47, 0x44, 0x2F, 0x00
+48, 0x44, 0x30, 0x00
+49, 0x44, 0x31, 0x00
+50, 0x64, 0x2E, 0x20
+51, 0x64, 0x2F, 0x00
+52, 0x64, 0x30, 0x00
+53, 0x64, 0x31, 0x00
+54, 0x64, 0x32, 0x00
+55, 0x64, 0x33, 0x00
+56, 0x64, 0x34, 0x00
+57, 0x64, 0x35, 0x00
+58, 0x64, 0x36, 0x00
+59, 0x64, 0x37, 0x00
+60, 0x64, 0x38, 0x00
+61, 0x65, 0x38, 0x20
+62, 0x66, 0x38, 0x20
+63, 0x67, 0x38, 0x20
+64, 0x68, 0x38, 0x20
+65, 0x69, 0x38, 0x20
+66, 0x6A, 0x38, 0x20
+67, 0x6B, 0x38, 0x20
+68, 0x6C, 0x38, 0x20
+69, 0x6D, 0x38, 0x20
+70, 0x6E, 0x38, 0x20
+71, 0x6F, 0x38, 0x20
+</gaintable>
+				attr 10: multichip_sync ERROR: Permission denied (13)
+				attr 11: rssi_gain_step_error value: lna_error: 0 0 0 0
+mixer_error: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+gain_step_calib_reg_val: 0 0 0 0 0
+				attr 12: rx_path_rates value: BBPLL:983040000 ADC:245760000 R2:122880000 R1:61440000 RF:30720000 RXSAMP:30720000
+				attr 13: trx_rate_governor value: nominal
+				attr 14: trx_rate_governor_available value: nominal highest_osr
+				attr 15: tx_path_rates value: BBPLL:983040000 DAC:122880000 T2:122880000 T1:61440000 TF:30720000 TXSAMP:30720000
+				attr 16: waiting_for_supplier value: 0
+				attr 17: xo_correction value: 40000000
+				attr 18: xo_correction_available value: [39992000 1 40008000]
+		No trigger on this device
+	iio:device2: ad9361-phy-B
+		11 channels found:
+			altvoltage1: TX_LO (output)
+			9 channel-specific attributes found:
+				attr  0: external value: 0
+				attr  1: fastlock_load value: 0
+				attr  2: fastlock_recall ERROR: Invalid argument (22)
+				attr  3: fastlock_save value: 0 252,220,220,84,84,211,220,252,220,250,220,244,253,234,178,125
+				attr  4: fastlock_store value: 0
+				attr  5: frequency value: 2400000000
+				attr  6: frequency_available value: [46875001 1 6000000000]
+				attr  7: label value: TX_LO
+				attr  8: powerdown value: 0
+			voltage1:  (output)
+			10 channel-specific attributes found:
+				attr  0: filter_fir_en value: 0
+				attr  1: hardwaregain value: -10.000000 dB
+				attr  2: hardwaregain_available value: [-89.750000 0.250000 0.000000]
+				attr  3: rf_bandwidth value: 18000000
+				attr  4: rf_bandwidth_available value: [200000 1 40000000]
+				attr  5: rf_port_select value: A
+				attr  6: rf_port_select_available value: A B
+				attr  7: rssi value: 0.00 dB
+				attr  8: sampling_frequency value: 30720000
+				attr  9: sampling_frequency_available value: [2083333 1 61440000]
+			voltage0:  (input)
+			15 channel-specific attributes found:
+				attr  0: bb_dc_offset_tracking_en value: 1
+				attr  1: filter_fir_en value: 0
+				attr  2: gain_control_mode value: slow_attack
+				attr  3: gain_control_mode_available value: manual fast_attack slow_attack hybrid
+				attr  4: hardwaregain value: 71.000000 dB
+				attr  5: hardwaregain_available value: [-3 1 71]
+				attr  6: quadrature_tracking_en value: 1
+				attr  7: rf_bandwidth value: 18000000
+				attr  8: rf_bandwidth_available value: [200000 1 56000000]
+				attr  9: rf_dc_offset_tracking_en value: 1
+				attr 10: rf_port_select value: A_BALANCED
+				attr 11: rf_port_select_available value: A_BALANCED B_BALANCED C_BALANCED A_N A_P B_N B_P C_N C_P TX_MONITOR1 TX_MONITOR2 TX_MONITOR1_2
+				attr 12: rssi value: 98.50 dB
+				attr 13: sampling_frequency value: 30720000
+				attr 14: sampling_frequency_available value: [2083333 1 61440000]
+			voltage1:  (input)
+			15 channel-specific attributes found:
+				attr  0: bb_dc_offset_tracking_en value: 1
+				attr  1: filter_fir_en value: 0
+				attr  2: gain_control_mode value: slow_attack
+				attr  3: gain_control_mode_available value: manual fast_attack slow_attack hybrid
+				attr  4: hardwaregain value: 68.000000 dB
+				attr  5: hardwaregain_available value: [-3 1 71]
+				attr  6: quadrature_tracking_en value: 1
+				attr  7: rf_bandwidth value: 18000000
+				attr  8: rf_bandwidth_available value: [200000 1 56000000]
+				attr  9: rf_dc_offset_tracking_en value: 1
+				attr 10: rf_port_select value: A_BALANCED
+				attr 11: rf_port_select_available value: A_BALANCED B_BALANCED C_BALANCED A_N A_P B_N B_P C_N C_P TX_MONITOR1 TX_MONITOR2 TX_MONITOR1_2
+				attr 12: rssi value: 90.75 dB
+				attr 13: sampling_frequency value: 30720000
+				attr 14: sampling_frequency_available value: [2083333 1 61440000]
+			voltage3:  (output)
+			8 channel-specific attributes found:
+				attr  0: filter_fir_en value: 0
+				attr  1: raw value: 306
+				attr  2: rf_bandwidth value: 18000000
+				attr  3: rf_bandwidth_available value: [200000 1 40000000]
+				attr  4: rf_port_select_available value: A B
+				attr  5: sampling_frequency value: 30720000
+				attr  6: sampling_frequency_available value: [2083333 1 61440000]
+				attr  7: scale value: 1.000000
+			altvoltage0: RX_LO (output)
+			9 channel-specific attributes found:
+				attr  0: external value: 0
+				attr  1: fastlock_load value: 0
+				attr  2: fastlock_recall ERROR: Invalid argument (22)
+				attr  3: fastlock_save value: 0 159,167,151,191,159,183,83,151,159,151,159,155,215,151,159,151
+				attr  4: fastlock_store value: 0
+				attr  5: frequency value: 2400000000
+				attr  6: frequency_available value: [70000000 1 6000000000]
+				attr  7: label value: RX_LO
+				attr  8: powerdown value: 0
+			voltage2:  (output)
+			8 channel-specific attributes found:
+				attr  0: filter_fir_en value: 0
+				attr  1: raw value: 306
+				attr  2: rf_bandwidth value: 18000000
+				attr  3: rf_bandwidth_available value: [200000 1 40000000]
+				attr  4: rf_port_select_available value: A B
+				attr  5: sampling_frequency value: 30720000
+				attr  6: sampling_frequency_available value: [2083333 1 61440000]
+				attr  7: scale value: 1.000000
+			temp0:  (input)
+			1 channel-specific attributes found:
+				attr  0: input value: 42105
+			voltage0:  (output)
+			10 channel-specific attributes found:
+				attr  0: filter_fir_en value: 0
+				attr  1: hardwaregain value: -10.000000 dB
+				attr  2: hardwaregain_available value: [-89.750000 0.250000 0.000000]
+				attr  3: rf_bandwidth value: 18000000
+				attr  4: rf_bandwidth_available value: [200000 1 40000000]
+				attr  5: rf_port_select value: A
+				attr  6: rf_port_select_available value: A B
+				attr  7: rssi value: 0.00 dB
+				attr  8: sampling_frequency value: 30720000
+				attr  9: sampling_frequency_available value: [2083333 1 61440000]
+			voltage2:  (input)
+			13 channel-specific attributes found:
+				attr  0: bb_dc_offset_tracking_en value: 1
+				attr  1: filter_fir_en value: 0
+				attr  2: gain_control_mode_available value: manual fast_attack slow_attack hybrid
+				attr  3: offset value: 57
+				attr  4: quadrature_tracking_en value: 1
+				attr  5: raw value: 1345
+				attr  6: rf_bandwidth value: 18000000
+				attr  7: rf_bandwidth_available value: [200000 1 56000000]
+				attr  8: rf_dc_offset_tracking_en value: 1
+				attr  9: rf_port_select_available value: A_BALANCED B_BALANCED C_BALANCED A_N A_P B_N B_P C_N C_P TX_MONITOR1 TX_MONITOR2 TX_MONITOR1_2
+				attr 10: sampling_frequency value: 30720000
+				attr 11: sampling_frequency_available value: [2083333 1 61440000]
+				attr 12: scale value: 0.305250
+			out:  (input, WARN:iio_channel_get_type()=UNKNOWN)
+			1 channel-specific attributes found:
+				attr  0: voltage_filter_fir_en value: 0
+		19 device-specific attributes found:
+				attr  0: calib_mode value: auto
+				attr  1: calib_mode_available value: auto manual manual_tx_quad tx_quad rf_dc_offs rssi_gain_step
+				attr  2: dcxo_tune_coarse ERROR: No such device (19)
+				attr  3: dcxo_tune_coarse_available value: [0 0 0]
+				attr  4: dcxo_tune_fine ERROR: No such device (19)
+				attr  5: dcxo_tune_fine_available value: [0 0 0]
+				attr  6: ensm_mode value: fdd
+				attr  7: ensm_mode_available value: sleep wait alert fdd pinctrl pinctrl_fdd_indep
+				attr  8: filter_fir_config value: FIR Rx: 0,0 Tx: 0,0
+				attr  9: gain_table_config value: <gaintable AD9361 type=FULL dest=3 start=1300000000 end=4000000000>
+-3, 0x00, 0x00, 0x20
+-3, 0x00, 0x00, 0x00
+-3, 0x00, 0x00, 0x00
+-2, 0x00, 0x01, 0x00
+-1, 0x00, 0x02, 0x00
+0, 0x00, 0x03, 0x00
+1, 0x00, 0x04, 0x00
+2, 0x00, 0x05, 0x00
+3, 0x01, 0x03, 0x20
+4, 0x01, 0x04, 0x00
+5, 0x01, 0x05, 0x00
+6, 0x01, 0x06, 0x00
+7, 0x01, 0x07, 0x00
+8, 0x01, 0x08, 0x00
+9, 0x01, 0x09, 0x00
+10, 0x01, 0x0A, 0x00
+11, 0x01, 0x0B, 0x00
+12, 0x01, 0x0C, 0x00
+13, 0x01, 0x0D, 0x00
+14, 0x01, 0x0E, 0x00
+15, 0x02, 0x09, 0x20
+16, 0x02, 0x0A, 0x00
+17, 0x02, 0x0B, 0x00
+18, 0x02, 0x0C, 0x00
+19, 0x02, 0x0D, 0x00
+20, 0x02, 0x0E, 0x00
+21, 0x02, 0x0F, 0x00
+22, 0x02, 0x10, 0x00
+23, 0x02, 0x2B, 0x20
+24, 0x02, 0x2C, 0x00
+25, 0x04, 0x27, 0x20
+26, 0x04, 0x28, 0x00
+27, 0x04, 0x29, 0x00
+28, 0x04, 0x2A, 0x00
+29, 0x04, 0x2B, 0x00
+30, 0x24, 0x21, 0x20
+31, 0x24, 0x22, 0x00
+32, 0x44, 0x20, 0x20
+33, 0x44, 0x21, 0x00
+34, 0x44, 0x22, 0x00
+35, 0x44, 0x23, 0x00
+36, 0x44, 0x24, 0x00
+37, 0x44, 0x25, 0x00
+38, 0x44, 0x26, 0x00
+39, 0x44, 0x27, 0x00
+40, 0x44, 0x28, 0x00
+41, 0x44, 0x29, 0x00
+42, 0x44, 0x2A, 0x00
+43, 0x44, 0x2B, 0x00
+44, 0x44, 0x2C, 0x00
+45, 0x44, 0x2D, 0x00
+46, 0x44, 0x2E, 0x00
+47, 0x44, 0x2F, 0x00
+48, 0x44, 0x30, 0x00
+49, 0x44, 0x31, 0x00
+50, 0x64, 0x2E, 0x20
+51, 0x64, 0x2F, 0x00
+52, 0x64, 0x30, 0x00
+53, 0x64, 0x31, 0x00
+54, 0x64, 0x32, 0x00
+55, 0x64, 0x33, 0x00
+56, 0x64, 0x34, 0x00
+57, 0x64, 0x35, 0x00
+58, 0x64, 0x36, 0x00
+59, 0x64, 0x37, 0x00
+60, 0x64, 0x38, 0x00
+61, 0x65, 0x38, 0x20
+62, 0x66, 0x38, 0x20
+63, 0x67, 0x38, 0x20
+64, 0x68, 0x38, 0x20
+65, 0x69, 0x38, 0x20
+66, 0x6A, 0x38, 0x20
+67, 0x6B, 0x38, 0x20
+68, 0x6C, 0x38, 0x20
+69, 0x6D, 0x38, 0x20
+70, 0x6E, 0x38, 0x20
+71, 0x6F, 0x38, 0x20
+</gaintable>
+				attr 10: multichip_sync ERROR: Permission denied (13)
+				attr 11: rssi_gain_step_error value: lna_error: 0 0 0 0
+mixer_error: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+gain_step_calib_reg_val: 0 0 0 0 0
+				attr 12: rx_path_rates value: BBPLL:983040000 ADC:245760000 R2:122880000 R1:61440000 RF:30720000 RXSAMP:30720000
+				attr 13: trx_rate_governor value: nominal
+				attr 14: trx_rate_governor_available value: nominal highest_osr
+				attr 15: tx_path_rates value: BBPLL:983040000 DAC:122880000 T2:122880000 T1:61440000 TF:30720000 TXSAMP:30720000
+				attr 16: waiting_for_supplier value: 0
+				attr 17: xo_correction value: 40000000
+				attr 18: xo_correction_available value: [39992000 1 40008000]
+		No trigger on this device
+	iio:device3: xadc
+		9 channels found:
+			voltage5: vccoddr (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccoddr
+				attr  1: raw value: 2053
+				attr  2: scale value: 0.732421875
+			voltage0: vccint (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccint
+				attr  1: raw value: 1379
+				attr  2: scale value: 0.732421875
+			voltage4: vccpaux (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccpaux
+				attr  1: raw value: 2461
+				attr  2: scale value: 0.732421875
+			temp0:  (input)
+			3 channel-specific attributes found:
+				attr  0: offset value: -2219
+				attr  1: raw value: 2547
+				attr  2: scale value: 123.040771484
+			voltage7: vrefn (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vrefn
+				attr  1: raw value: 6
+				attr  2: scale value: 0.732421875
+			voltage1: vccaux (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccaux
+				attr  1: raw value: 2474
+				attr  2: scale value: 0.732421875
+			voltage2: vccbram (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccbram
+				attr  1: raw value: 1378
+				attr  2: scale value: 0.732421875
+			voltage3: vccpint (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccpint
+				attr  1: raw value: 1369
+				attr  2: scale value: 0.732421875
+			voltage6: vrefp (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vrefp
+				attr  1: raw value: 1713
+				attr  2: scale value: 0.732421875
+		2 device-specific attributes found:
+				attr  0: sampling_frequency value: 961538
+				attr  1: waiting_for_supplier value: 0
+		No trigger on this device
+	iio:device4: cf-ad9361-dds-core-lpc (buffer capable)
+		16 channels found:
+			voltage0:  (output, index: 0, format: le:S16/16>>0)
+			3 channel-specific attributes found:
+				attr  0: calibphase value: 0.000000
+				attr  1: calibscale value: 1.000000
+				attr  2: sampling_frequency value: 30720000
+			voltage1:  (output, index: 1, format: le:S16/16>>0)
+			3 channel-specific attributes found:
+				attr  0: calibphase value: 0.000000
+				attr  1: calibscale value: 1.000000
+				attr  2: sampling_frequency value: 30720000
+			voltage2:  (output, index: 2, format: le:S16/16>>0)
+			3 channel-specific attributes found:
+				attr  0: calibphase value: 0.000000
+				attr  1: calibscale value: 1.000000
+				attr  2: sampling_frequency value: 30720000
+			voltage3:  (output, index: 3, format: le:S16/16>>0)
+			3 channel-specific attributes found:
+				attr  0: calibphase value: 0.000000
+				attr  1: calibscale value: 1.000000
+				attr  2: sampling_frequency value: 30720000
+			voltage4:  (output, index: 4, format: le:S16/16>>0)
+			1 channel-specific attributes found:
+				attr  0: sampling_frequency value: 30720000
+			voltage5:  (output, index: 5, format: le:S16/16>>0)
+			1 channel-specific attributes found:
+				attr  0: sampling_frequency value: 30720000
+			voltage6:  (output, index: 6, format: le:S16/16>>0)
+			1 channel-specific attributes found:
+				attr  0: sampling_frequency value: 30720000
+			voltage7:  (output, index: 7, format: le:S16/16>>0)
+			1 channel-specific attributes found:
+				attr  0: sampling_frequency value: 30720000
+			altvoltage3: TX1_Q_F2 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX1_Q_F2
+				attr  2: phase value: 0
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage1: TX1_I_F2 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX1_I_F2
+				attr  2: phase value: 90000
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage0: TX1_I_F1 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX1_I_F1
+				attr  2: phase value: 90000
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage7: TX2_Q_F2 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX2_Q_F2
+				attr  2: phase value: 0
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage6: TX2_Q_F1 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX2_Q_F1
+				attr  2: phase value: 0
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage5: TX2_I_F2 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX2_I_F2
+				attr  2: phase value: 90000
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage2: TX1_Q_F1 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX1_Q_F1
+				attr  2: phase value: 0
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage4: TX2_I_F1 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX2_I_F1
+				attr  2: phase value: 90000
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+		3 device-specific attributes found:
+				attr  0: sync_start_enable value: arm
+				attr  1: sync_start_enable_available value: arm
+				attr  2: waiting_for_supplier value: 0
+		3 buffer-specific attributes found:
+				attr  0: data_available value: 0
+				attr  1: direction value: out
+				attr  2: length_align_bytes value: 16
+		No trigger on this device
+	iio:device5: cf-ad9361-dds-core-B
+		12 channels found:
+			voltage1:  (output)
+			3 channel-specific attributes found:
+				attr  0: calibphase value: 0.000000
+				attr  1: calibscale value: 1.000000
+				attr  2: sampling_frequency value: 30720000
+			voltage0:  (output)
+			3 channel-specific attributes found:
+				attr  0: calibphase value: 0.000000
+				attr  1: calibscale value: 1.000000
+				attr  2: sampling_frequency value: 30720000
+			altvoltage3: TX1_Q_F2 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX1_Q_F2
+				attr  2: phase value: 0
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage1: TX1_I_F2 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX1_I_F2
+				attr  2: phase value: 90000
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage0: TX1_I_F1 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX1_I_F1
+				attr  2: phase value: 90000
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage7: TX2_Q_F2 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX2_Q_F2
+				attr  2: phase value: 0
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			voltage2:  (output)
+			3 channel-specific attributes found:
+				attr  0: calibphase value: 0.000000
+				attr  1: calibscale value: 1.000000
+				attr  2: sampling_frequency value: 30720000
+			altvoltage6: TX2_Q_F1 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX2_Q_F1
+				attr  2: phase value: 0
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			voltage3:  (output)
+			3 channel-specific attributes found:
+				attr  0: calibphase value: 0.000000
+				attr  1: calibscale value: 1.000000
+				attr  2: sampling_frequency value: 30720000
+			altvoltage5: TX2_I_F2 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX2_I_F2
+				attr  2: phase value: 90000
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage2: TX1_Q_F1 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX1_Q_F1
+				attr  2: phase value: 0
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+			altvoltage4: TX2_I_F1 (output)
+			6 channel-specific attributes found:
+				attr  0: frequency value: 9279985
+				attr  1: label value: TX2_I_F1
+				attr  2: phase value: 90000
+				attr  3: raw value: 1
+				attr  4: sampling_frequency value: 30720000
+				attr  5: scale value: 0.250000
+		3 device-specific attributes found:
+				attr  0: sync_start_enable value: arm
+				attr  1: sync_start_enable_available value: arm
+				attr  2: waiting_for_supplier value: 0
+		No trigger on this device
+	iio:device6: cf-ad9361-A (buffer capable)
+		8 channels found:
+			voltage0:  (input, index: 0, format: le:S12/16>>0)
+			5 channel-specific attributes found:
+				attr  0: calibbias value: 0
+				attr  1: calibphase value: 0.000000
+				attr  2: calibscale value: 1.000000
+				attr  3: samples_pps ERROR: No such device (19)
+				attr  4: sampling_frequency value: 30720000
+			voltage1:  (input, index: 1, format: le:S12/16>>0)
+			5 channel-specific attributes found:
+				attr  0: calibbias value: 0
+				attr  1: calibphase value: 0.000000
+				attr  2: calibscale value: 1.000000
+				attr  3: samples_pps ERROR: No such device (19)
+				attr  4: sampling_frequency value: 30720000
+			voltage2:  (input, index: 2, format: le:S12/16>>0)
+			5 channel-specific attributes found:
+				attr  0: calibbias value: 0
+				attr  1: calibphase value: 0.000000
+				attr  2: calibscale value: 1.000000
+				attr  3: samples_pps ERROR: No such device (19)
+				attr  4: sampling_frequency value: 30720000
+			voltage3:  (input, index: 3, format: le:S12/16>>0)
+			5 channel-specific attributes found:
+				attr  0: calibbias value: 0
+				attr  1: calibphase value: 0.000000
+				attr  2: calibscale value: 1.000000
+				attr  3: samples_pps ERROR: No such device (19)
+				attr  4: sampling_frequency value: 30720000
+			voltage4:  (input, index: 4, format: le:S12/16>>0)
+			2 channel-specific attributes found:
+				attr  0: samples_pps ERROR: No such device (19)
+				attr  1: sampling_frequency value: 30720000
+			voltage5:  (input, index: 5, format: le:S12/16>>0)
+			2 channel-specific attributes found:
+				attr  0: samples_pps ERROR: No such device (19)
+				attr  1: sampling_frequency value: 30720000
+			voltage6:  (input, index: 6, format: le:S12/16>>0)
+			2 channel-specific attributes found:
+				attr  0: samples_pps ERROR: No such device (19)
+				attr  1: sampling_frequency value: 30720000
+			voltage7:  (input, index: 7, format: le:S12/16>>0)
+			2 channel-specific attributes found:
+				attr  0: samples_pps ERROR: No such device (19)
+				attr  1: sampling_frequency value: 30720000
+		3 device-specific attributes found:
+				attr  0: sync_start_enable value: disarm
+				attr  1: sync_start_enable_available value: arm
+				attr  2: waiting_for_supplier value: 0
+		3 buffer-specific attributes found:
+				attr  0: data_available value: 0
+				attr  1: direction value: in
+				attr  2: length_align_bytes value: 16
+		No trigger on this device
+	iio:device7: cf-ad9361-B
+		4 channels found:
+			voltage1:  (input)
+			5 channel-specific attributes found:
+				attr  0: calibbias value: 0
+				attr  1: calibphase value: 0.000000
+				attr  2: calibscale value: 1.000000
+				attr  3: samples_pps ERROR: No such device (19)
+				attr  4: sampling_frequency value: 30720000
+			voltage3:  (input)
+			5 channel-specific attributes found:
+				attr  0: calibbias value: 0
+				attr  1: calibphase value: 0.000000
+				attr  2: calibscale value: 1.000000
+				attr  3: samples_pps ERROR: No such device (19)
+				attr  4: sampling_frequency value: 30720000
+			voltage2:  (input)
+			5 channel-specific attributes found:
+				attr  0: calibbias value: 0
+				attr  1: calibphase value: 0.000000
+				attr  2: calibscale value: 1.000000
+				attr  3: samples_pps ERROR: No such device (19)
+				attr  4: sampling_frequency value: 30720000
+			voltage0:  (input)
+			5 channel-specific attributes found:
+				attr  0: calibbias value: 0
+				attr  1: calibphase value: 0.000000
+				attr  2: calibscale value: 1.000000
+				attr  3: samples_pps ERROR: No such device (19)
+				attr  4: sampling_frequency value: 30720000
+		3 device-specific attributes found:
+				attr  0: sync_start_enable value: disarm
+				attr  1: sync_start_enable_available value: arm
+				attr  2: waiting_for_supplier value: 0
+		No trigger on this device
+	iio_sysfs_trigger:
+		0 channels found:
+		2 device-specific attributes found:
+				attr  0: add_trigger ERROR: Permission denied (13)
+				attr  1: remove_trigger ERROR: Permission denied (13)
+		No trigger on this device
