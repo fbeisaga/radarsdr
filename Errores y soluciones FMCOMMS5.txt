@@ -247,5 +247,15 @@ Unable to write attribute in_voltage1_gain_control_mode: -13
 Unable to write attribute in_voltage1_hardwaregain: -13
 Unable to write attribute in_voltage0_rf_port_select: -13
 gr::log :INFO: audio source - Audio sink arch: alsa
-thread[thread-per-block[0]: <block fmcomms5_source(5)>]: Unable to create buffer!
+thread[thread-per-block[0]: <block fmcomms5_source(5)>]: Unable to create buffer!                                                                                                                               PROBA esto modifica atributos del ad9361-------------------------------------------------------------------------------------------------
+python3 - <<'PY'
+import iio
+ctx = iio.Context("local:")
+phy = ctx.find_device("ad9361-phy")
+rx0 = phy.find_channel("voltage0", False)  # RX0 entrada
+# Cambia a manual y fija una ganancia válida (p.ej. 50 dB)
+rx0.attrs["gain_control_mode"].value = "manual"
+rx0.attrs["hardwaregain"].value = "50"
+print("OK, se pudo escribir sin sudo")
+PY
 
