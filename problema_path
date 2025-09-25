@@ -173,4 +173,38 @@ Unpacking python3-numpy (1:1.19.5-1) over (1:1.19.5-1) ...
 Setting up python3-numpy (1:1.19.5-1) ...
 NumPy: 1.19.5 from /usr/lib/python3/dist-packages/numpy/__init__.py
 
+analog@analog:~ $ python3 - <<'PY'
+
+import sys, importlib.util as U
+
+print("Python:", sys.version)
+
+# 1) GNU Radio
+
+import gnuradio
+
+from gnuradio import gr, blocks
+
+print("OK: gnuradio importado desde:", gnuradio.__file__)
+
+# 2) gr-iio (los bloques de IIO para GRC)
+
+print("iio (gr-iio) disponible?:", U.find_spec("iio") is not None)
+
+import iio
+
+print("iio.__file__:", getattr(iio, "__file__", None))
+
+print("Tiene fmcomms5_source_f32c?:", hasattr(iio, "fmcomms5_source_f32c"))
+
+PY
+
+Python: 3.9.2 (default, Mar 20 2025, 22:21:41) 
+[GCC 10.2.1 20210110]
+OK: gnuradio importado desde: /usr/local/lib/python3.9/dist-packages/gnuradio/__init__.py
+iio (gr-iio) disponible?: True
+iio.__file__: /usr/lib/python3/dist-packages/iio/__init__.py
+Tiene fmcomms5_source_f32c?: True
+
+
 
