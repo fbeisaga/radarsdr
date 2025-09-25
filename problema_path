@@ -130,4 +130,47 @@ Traceback (most recent call last):
     from .gr_python import *
 ImportError: ImportError: numpy.core.multiarray failed to import
 analog@analog:~ $ 
+analog@analog:~ $ # 1) Quita NumPy instalado con pip (el que trajo la 2.x)
+
+sudo -H python3 -m pip uninstall -y numpy
+
+
+
+# 2) Reinstala el NumPy del sistema (1.x)
+
+sudo apt-get update
+
+sudo apt-get install --reinstall python3-numpy
+
+
+
+# 3) Verifica la versión cargada y su ubicación
+
+python3 -c "import numpy, sys; print('NumPy:', numpy.__version__, 'from', numpy.__file__)"
+
+[sudo] password for analog: 
+
+Found existing installation: numpy 2.0.2
+Uninstalling numpy-2.0.2:
+  Successfully uninstalled numpy-2.0.2
+Get:1 http://raspbian.raspberrypi.org/raspbian bullseye InRelease [15.0 kB]
+Get:2 http://archive.raspberrypi.org/debian bullseye InRelease [39.0 kB]
+Get:3 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages [13.2 MB]
+Get:4 http://archive.raspberrypi.org/debian bullseye/main armhf Packages [330 kB]
+Fetched 13.6 MB in 21s (657 kB/s)                                              
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+0 upgraded, 0 newly installed, 1 reinstalled, 0 to remove and 15 not upgraded.
+Need to get 2,930 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://espejito.fder.edu.uy/raspbian/raspbian bullseye/main armhf python3-numpy armhf 1:1.19.5-1 [2,930 kB]
+Fetched 2,930 kB in 2s (1,392 kB/s)        
+(Reading database ... 194475 files and directories currently installed.)
+Preparing to unpack .../python3-numpy_1%3a1.19.5-1_armhf.deb ...
+Unpacking python3-numpy (1:1.19.5-1) over (1:1.19.5-1) ...
+Setting up python3-numpy (1:1.19.5-1) ...
+NumPy: 1.19.5 from /usr/lib/python3/dist-packages/numpy/__init__.py
+
 
