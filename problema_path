@@ -1,0 +1,12 @@
+
+# Comprobar que GRC ve los bloques instalados
+
+gnuradio-config-info --prefs | grep -E 'blocks_path|grc'
+
+gnuradio.iio disponible?: False
+radar (gr-radar) disponible?: False
+[grc]
+global_blocks_path = /usr/local/share/gnuradio/grc/blocks
+local_blocks_path = 
+[grc-docs]
+analog@analog:~ $ 
