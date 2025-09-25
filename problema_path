@@ -10,3 +10,32 @@ global_blocks_path = /usr/local/share/gnuradio/grc/blocks
 local_blocks_path = 
 [grc-docs]
 analog@analog:~ $ 
+analog@analog:~ $ mkdir -p ~/.gnuradio
+
+cat > ~/.gnuradio/config.conf << 'EOF'
+
+[grc]
+
+# Acepta varios paths separados por ';'
+
+global_blocks_path=/usr/local/share/gnuradio/grc/blocks;/usr/share/gnuradio/grc/blocks
+
+local_blocks_path=
+
+EOF
+
+
+
+# Limpia la caché de GRC
+
+rm -rf ~/.cache/gnuradio/grc_*
+
+
+analog@analog:~ $ 
+analog@analog:~ $ gnuradio-config-info --prefs | grep -E 'blocks_path|grc'
+
+[grc]
+global_blocks_path = /usr/local/share/gnuradio/grc/blocks;/usr/share/gnuradio/grc/blocks
+local_blocks_path = 
+[grc-docs]
+analog@analog:~ $ 
