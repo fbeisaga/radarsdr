@@ -39,3 +39,95 @@ global_blocks_path = /usr/local/share/gnuradio/grc/blocks;/usr/share/gnuradio/gr
 local_blocks_path = 
 [grc-docs]
 analog@analog:~ $ 
+@analog:~ $ 
+analog@analog:~ $ gnuradio-config-info --prefs | grep -E 'blocks_path|grc'
+
+[grc]
+global_blocks_path = /usr/local/share/gnuradio/grc/blocks;/usr/share/gnuradio/grc/blocks
+local_blocks_path = 
+[grc-docs]
+analog@analog:~ $ python3 - <<'PY'
+
+import importlib.util as U, sys
+
+print("Python:", sys.version)
+
+print("iio disponible?:", U.find_spec("iio") is not None)
+
+print("radar disponible?:", U.find_spec("radar") is not None)
+
+if U.find_spec("iio"):
+
+    import iio
+
+    print("iio.__file__:", getattr(iio, "__file__", None))
+
+    print("tiene fmcomms5_source_f32c?:", hasattr(iio, "fmcomms5_source_f32c"))
+
+PY
+
+Python: 3.9.2 (default, Mar 20 2025, 22:21:41) 
+[GCC 10.2.1 20210110]
+iio disponible?: True
+radar disponible?: False
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "<stdin>", line 12, in <module>
+  File "/usr/lib/python3/dist-packages/iio/__init__.py", line 40, in <module>
+    from .attr_updater import attr_updater
+  File "/usr/lib/python3/dist-packages/iio/attr_updater.py", line 24, in <module>
+    from gnuradio import gr
+  File "/usr/local/lib/python3.9/dist-packages/gnuradio/gr/__init__.py", line 26, in <module>
+    from .gr_python import *
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "<stdin>", line 12, in <module>
+  File "/usr/lib/python3/dist-packages/iio/__init__.py", line 40, in <module>
+    from .attr_updater import attr_updater
+  File "/usr/lib/python3/dist-packages/iio/attr_updater.py", line 24, in <module>
+    from gnuradio import gr
+  File "/usr/local/lib/python3.9/dist-packages/gnuradio/gr/__init__.py", line 30, in <module>
+    from .gr_python import *
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/gnuradio/gr/__init__.py", line 26, in <module>
+    from .gr_python import *
+ImportError: ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+AttributeError: _ARRAY_API not found
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/gnuradio/gr/__init__.py", line 26, in <module>
+    from .gr_python import *
+ImportError: ImportError: numpy.core.multiarray failed to import
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 12, in <module>
+  File "/usr/lib/python3/dist-packages/iio/__init__.py", line 40, in <module>
+    from .attr_updater import attr_updater
+  File "/usr/lib/python3/dist-packages/iio/attr_updater.py", line 24, in <module>
+    from gnuradio import gr
+  File "/usr/local/lib/python3.9/dist-packages/gnuradio/gr/__init__.py", line 30, in <module>
+    from .gr_python import *
+ImportError: ImportError: numpy.core.multiarray failed to import
+analog@analog:~ $ 
+
