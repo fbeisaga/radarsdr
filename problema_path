@@ -224,6 +224,23 @@ PY
 Python: 3.9.2 (default, Mar 20 2025, 22:21:41) 
 [GCC 10.2.1 20210110]
 radar disponible?: False
+analog@analog:~ $ # Para esta sesión de shell
+
+export PYTHONPATH=/usr/local/lib/python3/dist-packages:/usr/local/lib/python3.9/dist-packages:$PYTHONPATH
+
+export GRC_BLOCKS_PATH=/usr/local/share/gnuradio/grc/blocks:/usr/share/gnuradio/grc/blocks
+
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
+
+
+# Vuelve a probar el paso 1 y 2
+
+python3 -c "import importlib.util as U; print('radar?', U.find_spec('radar') is not None)"
+
+radar? False
+analog@analog:~ $ 
+
 
 
 
