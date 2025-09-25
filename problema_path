@@ -357,6 +357,1962 @@ Módulos que contienen 'radar': []
 /usr/local/share/gnuradio/examples/qt-gui/test_distanceradar.grc
 /usr/local/share/gnuradio/grc/blocks/qtgui_distanceradar.block.yml
 
+-------
+-- Build type not specified: defaulting to release.
+CMake Warning (dev) at /usr/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:273 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (GMP).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.18/Modules/FindPkgConfig.cmake:59 (find_package_handle_standard_args)
+  /usr/lib/arm-linux-gnueabihf/cmake/gnuradio/FindGMP.cmake:2 (include)
+  /usr/lib/arm-linux-gnueabihf/cmake/gnuradio/FindMPLIB.cmake:1 (find_package)
+  /usr/share/cmake-3.18/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+  /usr/lib/arm-linux-gnueabihf/cmake/gnuradio/GnuradioConfig.cmake:26 (find_dependency)
+  CMakeLists.txt:32 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Checking for module 'mpir >= 3.0'
+--   No package 'mpir' found
+-- Could NOT find MPIR (missing: MPIRXX_LIBRARY MPIR_LIBRARY MPIR_INCLUDE_DIR) 
+-- User set python executable /usr/bin/python3
+-- Python checking for Thrift - found
+CMake Error at CMakeLists.txt:49 (include):
+  include could not find load file:
+
+    GrMinReq
+
+
+CMake Error at CMakeLists.txt:55 (include):
+  include could not find load file:
+
+    GrCompilerSettings
+
+
+-- Extracting version information from git describe...
+-- Python checking for PyQt5 - found
+-- QWT Version: 6.1.4
+CMake Warning (dev) at /usr/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:273 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (UHD).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.18/Modules/FindPkgConfig.cmake:59 (find_package_handle_standard_args)
+  /usr/lib/arm-linux-gnueabihf/cmake/gnuradio/FindUHD.cmake:56 (include)
+  CMakeLists.txt:108 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Checking for module 'uhd'
+--   No package 'uhd' found
+-- Using install prefix: /usr/local
+-- Building for version: 1.0.0.0 / 1.0.0
+-- No C++ unit tests... skipping
+-- PYTHON and GRC components are enabled
+-- Python checking for pygccxml - not found
+CMake Error at python/radar/bindings/CMakeLists.txt:10 (include):
+  include could not find load file:
+
+    GrPybind
+
+
+CMake Error at python/radar/bindings/CMakeLists.txt:49 (GR_PYBIND_MAKE_OOT):
+  Unknown CMake command "GR_PYBIND_MAKE_OOT".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/analog/gr-radar/build/CMakeFiles/CMakeOutput.log".
+See also "/home/analog/gr-radar/build/CMakeFiles/CMakeError.log".
+make: *** No targets specified and no makefile found.  Stop.
+Python: 3.9.2 (default, Mar 20 2025, 22:21:41) 
+[GCC 10.2.1 20210110]
+radar disponible?: True
+ Block with id "analog_agc2_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_agc2_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_agc2_xx.block.yml
+Block with id "analog_agc3_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_agc3_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_agc3_xx.block.yml
+Block with id "analog_agc_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_agc_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_agc_xx.block.yml
+Block with id "analog_am_demod_cf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_am_demod_cf.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_am_demod_cf.block.yml
+Block with id "analog_const_source_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_const_source_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_const_source_x.block.yml
+Block with id "analog_cpfsk_bc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_cpfsk_bc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_cpfsk_bc.block.yml
+Block with id "analog_ctcss_squelch_ff" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_ctcss_squelch_ff.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_ctcss_squelch_ff.block.yml
+Block with id "analog_dpll_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_dpll_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_dpll_bb.block.yml
+Block with id "analog_fastnoise_source_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_fastnoise_source_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_fastnoise_source_x.block.yml
+Block with id "analog_feedforward_agc_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_feedforward_agc_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_feedforward_agc_cc.block.yml
+Block with id "analog_fm_deemph" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_fm_deemph.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_fm_deemph.block.yml
+Block with id "analog_fm_demod_cf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_fm_demod_cf.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_fm_demod_cf.block.yml
+Block with id "analog_fm_preemph" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_fm_preemph.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_fm_preemph.block.yml
+Block with id "analog_fmdet_cf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_fmdet_cf.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_fmdet_cf.block.yml
+Block with id "analog_frequency_modulator_fc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_frequency_modulator_fc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_frequency_modulator_fc.block.yml
+Block with id "analog_nbfm_rx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_nbfm_rx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_nbfm_rx.block.yml
+Block with id "analog_nbfm_tx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_nbfm_tx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_nbfm_tx.block.yml
+Block with id "analog_noise_source_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_noise_source_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_noise_source_x.block.yml
+Block with id "analog_phase_modulator_fc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_phase_modulator_fc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_phase_modulator_fc.block.yml
+Block with id "analog_pll_carriertracking_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_pll_carriertracking_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_pll_carriertracking_cc.block.yml
+Block with id "analog_pll_freqdet_cf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_pll_freqdet_cf.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_pll_freqdet_cf.block.yml
+Block with id "analog_pll_refout_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_pll_refout_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_pll_refout_cc.block.yml
+Block with id "analog_probe_avg_mag_sqrd_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_probe_avg_mag_sqrd_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_probe_avg_mag_sqrd_x.block.yml
+Block with id "analog_pwr_squelch_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_pwr_squelch_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_pwr_squelch_xx.block.yml
+Block with id "analog_quadrature_demod_cf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_quadrature_demod_cf.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_quadrature_demod_cf.block.yml
+Block with id "analog_rail_ff" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_rail_ff.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_rail_ff.block.yml
+Block with id "analog_random_source_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_random_source_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_random_source_x.block.yml
+Block with id "analog_random_uniform_source_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_random_uniform_source_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_random_uniform_source_x.block.yml
+Block with id "analog_sig_source_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_sig_source_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_sig_source_x.block.yml
+Block with id "analog_simple_squelch_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_simple_squelch_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_simple_squelch_cc.block.yml
+Block with id "analog_standard_squelch" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_standard_squelch.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_standard_squelch.block.yml
+Block with id "analog_wfm_rcv" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_wfm_rcv.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_wfm_rcv.block.yml
+Block with id "analog_wfm_rcv_pll" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_wfm_rcv_pll.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_wfm_rcv_pll.block.yml
+Block with id "analog_wfm_tx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/analog_wfm_tx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/analog_wfm_tx.block.yml
+Block with id "audio_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/audio_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/audio_sink.block.yml
+Block with id "audio_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/audio_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/audio_source.block.yml
+Block with id "blocks_abs_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_abs_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_abs_xx.block.yml
+Block with id "blocks_add_const_vxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_add_const_vxx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_add_const_vxx.block.yml
+Block with id "blocks_add_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_add_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_add_xx.block.yml
+Block with id "blocks_and_const_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_and_const_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_and_const_xx.block.yml
+Block with id "blocks_and_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_and_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_and_xx.block.yml
+Block with id "blocks_argmax_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_argmax_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_argmax_xx.block.yml
+Block with id "blocks_burst_tagger" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_burst_tagger.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_burst_tagger.block.yml
+Block with id "blocks_char_to_float" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_char_to_float.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_char_to_float.block.yml
+Block with id "blocks_char_to_short" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_char_to_short.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_char_to_short.block.yml
+Block with id "blocks_complex_to_arg" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_complex_to_arg.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_complex_to_arg.block.yml
+Block with id "blocks_complex_to_float" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_complex_to_float.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_complex_to_float.block.yml
+Block with id "blocks_complex_to_imag" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_complex_to_imag.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_complex_to_imag.block.yml
+Block with id "blocks_complex_to_interleaved_char" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_complex_to_interleaved_char.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_complex_to_interleaved_char.block.yml
+Block with id "blocks_complex_to_interleaved_short" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_complex_to_interleaved_short.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_complex_to_interleaved_short.block.yml
+Block with id "blocks_complex_to_mag" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_complex_to_mag.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_complex_to_mag.block.yml
+Block with id "blocks_complex_to_mag_squared" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_complex_to_mag_squared.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_complex_to_mag_squared.block.yml
+Block with id "blocks_complex_to_magphase" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_complex_to_magphase.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_complex_to_magphase.block.yml
+Block with id "blocks_complex_to_real" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_complex_to_real.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_complex_to_real.block.yml
+Block with id "blocks_conjugate_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_conjugate_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_conjugate_cc.block.yml
+Block with id "blocks_copy" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_copy.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_copy.block.yml
+Block with id "blocks_ctrlport_monitor_performance" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_ctrlport_performance.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_ctrlport_performance.block.yml
+Block with id "blocks_ctrlport_probe2_c" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_ctrlport_probe2_c.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_ctrlport_probe2_c.block.yml
+Block with id "blocks_ctrlport_probe2_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_ctrlport_probe2_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_ctrlport_probe2_x.block.yml
+Block with id "blocks_ctrlport_probe_c" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_ctrlport_probe_c.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_ctrlport_probe_c.block.yml
+Block with id "blocks_ctrlport_monitor" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_ctrlport_viewer.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_ctrlport_viewer.block.yml
+Block with id "blocks_deinterleave" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_deinterleave.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_deinterleave.block.yml
+Block with id "blocks_delay" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_delay.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_delay.block.yml
+Block with id "blocks_divide_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_divide_XX.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_divide_XX.block.yml
+Block with id "blocks_endian_swap" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_endian_swap.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_endian_swap.block.yml
+Block with id "blocks_exponentiate_const_cci" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_exponentiate_const_cci.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_exponentiate_const_cci.block.yml
+Block with id "blocks_file_descriptor_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_file_descriptor_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_file_descriptor_sink.block.yml
+Block with id "blocks_file_descriptor_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_file_descriptor_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_file_descriptor_source.block.yml
+Block with id "blocks_file_meta_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_file_meta_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_file_meta_sink.block.yml
+Block with id "blocks_file_meta_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_file_meta_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_file_meta_source.block.yml
+Block with id "blocks_file_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_file_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_file_sink.block.yml
+Block with id "blocks_file_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_file_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_file_source.block.yml
+Block with id "blocks_float_to_char" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_float_to_char.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_float_to_char.block.yml
+Block with id "blocks_float_to_complex" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_float_to_complex.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_float_to_complex.block.yml
+Block with id "blocks_float_to_int" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_float_to_int.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_float_to_int.block.yml
+Block with id "blocks_float_to_short" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_float_to_short.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_float_to_short.block.yml
+Block with id "blocks_float_to_uchar" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_float_uchar.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_float_uchar.block.yml
+Block with id "blocks_head" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_head.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_head.block.yml
+Block with id "blocks_int_to_float" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_int_to_float.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_int_to_float.block.yml
+Block with id "blocks_integrate_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_integrate_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_integrate_xx.block.yml
+Block with id "blocks_interleave" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_interleave.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_interleave.block.yml
+Block with id "blocks_interleaved_char_to_complex" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_interleaved_char_to_complex.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_interleaved_char_to_complex.block.yml
+Block with id "blocks_interleaved_short_to_complex" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_interleaved_short_to_complex.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_interleaved_short_to_complex.block.yml
+Block with id "blocks_keep_m_in_n" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_keep_m_in_n.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_keep_m_in_n.block.yml
+Block with id "blocks_keep_one_in_n" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_keep_one_in_n.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_keep_one_in_n.block.yml
+Block with id "blocks_magphase_to_complex" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_magphase_to_complex.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_magphase_to_complex.block.yml
+Block with id "blocks_max_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_max_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_max_xx.block.yml
+Block with id "blocks_message_debug" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_message_debug.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_message_debug.block.yml
+Block with id "blocks_message_strobe" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_message_strobe.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_message_strobe.block.yml
+Block with id "blocks_message_strobe_random" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_message_strobe_random.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_message_strobe_random.block.yml
+Block with id "blocks_min_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_min_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_min_xx.block.yml
+Block with id "blocks_moving_average_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_moving_average_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_moving_average_xx.block.yml
+Block with id "blocks_multiply_by_tag_value_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_multiply_by_tag_value_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_multiply_by_tag_value_cc.block.yml
+Block with id "blocks_multiply_conjugate_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_multiply_conjugate_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_multiply_conjugate_cc.block.yml
+Block with id "blocks_multiply_const_vxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_multiply_const_vxx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_multiply_const_vxx.block.yml
+Block with id "blocks_multiply_const_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_multiply_const_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_multiply_const_xx.block.yml
+Block with id "blocks_multiply_matrix_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_multiply_matrix_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_multiply_matrix_xx.block.yml
+Block with id "blocks_multiply_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_multiply_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_multiply_xx.block.yml
+Block with id "blocks_mute_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_mute_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_mute_xx.block.yml
+Block with id "blocks_nlog10_ff" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_nlog10_ff.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_nlog10_ff.block.yml
+Block with id "blocks_nop" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_nop.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_nop.block.yml
+Block with id "blocks_not_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_not_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_not_xx.block.yml
+Block with id "blocks_null_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_null_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_null_sink.block.yml
+Block with id "blocks_null_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_null_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_null_source.block.yml
+Block with id "blocks_or_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_or_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_or_xx.block.yml
+Block with id "blocks_pack_k_bits_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_pack_k_bits_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_pack_k_bits_bb.block.yml
+Block with id "blocks_packed_to_unpacked_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_packed_to_unpacked_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_packed_to_unpacked_xx.block.yml
+Block with id "blocks_patterned_interleaver" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_patterned_interleaver.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_patterned_interleaver.block.yml
+Block with id "blocks_pdu_filter" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_pdu_filter.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_pdu_filter.block.yml
+Block with id "blocks_pdu_remove" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_pdu_remove.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_pdu_remove.block.yml
+Block with id "blocks_pdu_set" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_pdu_set.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_pdu_set.block.yml
+Block with id "blocks_pdu_to_tagged_stream" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_pdu_to_tagged_stream.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_pdu_to_tagged_stream.block.yml
+Block with id "blocks_peak_detector2_fb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_peak_detector2_fb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_peak_detector2_fb.block.yml
+Block with id "blocks_peak_detector_xb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_peak_detector_xb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_peak_detector_xb.block.yml
+Block with id "blocks_plateau_detector_fb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_plateau_detector_fb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_plateau_detector_fb.block.yml
+Block with id "blocks_probe_rate" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_probe_rate.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_probe_rate.block.yml
+Block with id "blocks_probe_signal_vx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_probe_signal_vx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_probe_signal_vx.block.yml
+Block with id "blocks_probe_signal_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_probe_signal_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_probe_signal_x.block.yml
+Block with id "blocks_random_pdu" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_random_pdu.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_random_pdu.block.yml
+Block with id "blocks_regenerate_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_regenerate_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_regenerate_bb.block.yml
+Block with id "blocks_repack_bits_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_repack_bits_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_repack_bits_bb.block.yml
+Block with id "blocks_repeat" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_repeat.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_repeat.block.yml
+Block with id "blocks_rms_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_rms_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_rms_xx.block.yml
+Block with id "blocks_rotator_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_rotator_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_rotator_cc.block.yml
+Block with id "blocks_sample_and_hold_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_sample_and_hold_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_sample_and_hold_xx.block.yml
+Block with id "blocks_selector" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_selector.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_selector.block.yml
+Block with id "blocks_short_to_char" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_short_to_char.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_short_to_char.block.yml
+Block with id "blocks_short_to_float" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_short_to_float.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_short_to_float.block.yml
+Block with id "blocks_skiphead" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_skiphead.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_skiphead.block.yml
+Block with id "blocks_socket_pdu" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_socket_pdu.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_socket_pdu.block.yml
+Block with id "blocks_stream_mux" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_stream_mux.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_stream_mux.block.yml
+Block with id "blocks_stream_to_streams" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_stream_to_streams.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_stream_to_streams.block.yml
+Block with id "blocks_stream_to_tagged_stream" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_stream_to_tagged_stream.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_stream_to_tagged_stream.block.yml
+Block with id "blocks_stream_to_vector" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_stream_to_vector.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_stream_to_vector.block.yml
+Block with id "blocks_stream_to_vector_decimator" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_stream_to_vector_decimator.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_stream_to_vector_decimator.block.yml
+Block with id "blocks_streams_to_stream" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_streams_to_stream.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_streams_to_stream.block.yml
+Block with id "blocks_streams_to_vector" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_streams_to_vector.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_streams_to_vector.block.yml
+Block with id "blocks_stretch_ff" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_stretch_ff.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_stretch_ff.block.yml
+Block with id "blocks_sub_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_sub_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_sub_xx.block.yml
+Block with id "blocks_tag_debug" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tag_debug.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tag_debug.block.yml
+Block with id "blocks_tag_gate" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tag_gate.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tag_gate.block.yml
+Block with id "variable_tag_object" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tag_object.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tag_object.block.yml
+Block with id "blocks_tag_share" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tag_share.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tag_share.block.yml
+Block with id "blocks_tagged_file_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tagged_file_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tagged_file_sink.block.yml
+Block with id "blocks_tagged_stream_align" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tagged_stream_align.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tagged_stream_align.block.yml
+Block with id "blocks_tagged_stream_multiply_length" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tagged_stream_multiply_length.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tagged_stream_multiply_length.block.yml
+Block with id "blocks_tagged_stream_mux" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tagged_stream_mux.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tagged_stream_mux.block.yml
+Block with id "blocks_tagged_stream_to_pdu" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tagged_stream_to_pdu.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tagged_stream_to_pdu.block.yml
+Block with id "blocks_tags_strobe" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tags_strobe.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tags_strobe.block.yml
+Block with id "blocks_tcp_server_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tcp_server_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tcp_server_sink.block.yml
+Block with id "blocks_test_tag_variable_rate_ff" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_test_tag_variable_rate_ff.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_test_tag_variable_rate_ff.block.yml
+Block with id "blocks_threshold_ff" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_threshold_ff.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_threshold_ff.block.yml
+Block with id "blocks_throttle" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_throttle.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_throttle.block.yml
+Block with id "blocks_transcendental" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_transcendental.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_transcendental.block.yml
+Block with id "blocks_tuntap_pdu" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_tuntap_pdu.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_tuntap_pdu.block.yml
+Block with id "blocks_uchar_to_float" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_uchar_to_float.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_uchar_to_float.block.yml
+Block with id "blocks_udp_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_udp_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_udp_sink.block.yml
+Block with id "blocks_udp_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_udp_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_udp_source.block.yml
+Block with id "blocks_unpack_k_bits_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_unpack_k_bits_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_unpack_k_bits_bb.block.yml
+Block with id "blocks_unpacked_to_packed_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_unpacked_to_packed_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_unpacked_to_packed_xx.block.yml
+Block with id "blocks_vco_c" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_vco_c.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_vco_c.block.yml
+Block with id "blocks_vco_f" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_vco_f.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_vco_f.block.yml
+Block with id "blocks_vector_insert_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_vector_insert_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_vector_insert_x.block.yml
+Block with id "blocks_vector_sink_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_vector_sink_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_vector_sink_x.block.yml
+Block with id "blocks_vector_source_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_vector_source_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_vector_source_x.block.yml
+Block with id "blocks_vector_to_stream" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_vector_to_stream.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_vector_to_stream.block.yml
+Block with id "blocks_vector_to_streams" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_vector_to_streams.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_vector_to_streams.block.yml
+Block with id "blocks_xor_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/blocks_xor_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/blocks_xor_xx.block.yml
+Block with id "channels_amp_bal" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_amp_bal.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_amp_bal.block.yml
+Block with id "channels_cfo_model" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_cfo_model.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_cfo_model.block.yml
+Block with id "channels_channel_model" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_channel_model.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_channel_model.block.yml
+Block with id "channels_channel_model2" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_channel_model2.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_channel_model2.block.yml
+Block with id "channels_conj_fs_iqcorr" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_conj_fs_iqcorr.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_conj_fs_iqcorr.block.yml
+Block with id "channels_distortion_2_gen" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_distortion_2_gen.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_distortion_2_gen.block.yml
+Block with id "channels_distortion_3_gen" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_distortion_3_gen.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_distortion_3_gen.block.yml
+Block with id "channels_dynamic_channel_model" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_dynamic_channel_model.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_dynamic_channel_model.block.yml
+Block with id "channels_fading_model" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_fading_model.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_fading_model.block.yml
+Block with id "channels_impairments" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_impairments.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_impairments.block.yml
+Block with id "channels_iqbal_gen" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_iqbal_gen.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_iqbal_gen.block.yml
+Block with id "channels_phase_bal" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_phase_bal.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_phase_bal.block.yml
+Block with id "channels_phase_noise_gen" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_phase_noise_gen.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_phase_noise_gen.block.yml
+Block with id "channels_quantizer" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_quantizer.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_quantizer.block.yml
+Block with id "channels_selective_fading_model" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_selective_fading_model.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_selective_fading_model.block.yml
+Block with id "channels_selective_fading_model2" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_selective_fading_model2.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_selective_fading_model2.block.yml
+Block with id "channels_sro_model" loaded from
+  /usr/local/share/gnuradio/grc/blocks/channels_sro_model.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/channels_sro_model.block.yml
+Block with id "digital_additive_scrambler_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_additive_scrambler_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_additive_scrambler_bb.block.yml
+Block with id "digital_binary_slicer_fb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_binary_slicer_fb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_binary_slicer_fb.block.yml
+Block with id "digital_burst_shaper_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_burst_shaper.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_burst_shaper.block.yml
+Block with id "digital_chunks_to_symbols_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_chunks_to_symbols.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_chunks_to_symbols.block.yml
+Block with id "digital_clock_recovery_mm_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_clock_recovery_mm_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_clock_recovery_mm_xx.block.yml
+Block with id "digital_cma_equalizer_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_cma_equalizer_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_cma_equalizer_cc.block.yml
+Block with id "variable_constellation" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_constellation.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_constellation.block.yml
+Block with id "digital_constellation_decoder_cb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_constellation_decoder_cb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_constellation_decoder_cb.block.yml
+Block with id "digital_constellation_modulator" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_constellation_modulator.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_constellation_modulator.block.yml
+Block with id "digital_constellation_receiver_cb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_constellation_receiver_cb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_constellation_receiver_cb.block.yml
+Block with id "variable_constellation_rect" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_constellation_rect.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_constellation_rect.block.yml
+Block with id "digital_constellation_soft_decoder_cf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_constellation_soft_decoder_cf.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_constellation_soft_decoder_cf.block.yml
+Block with id "digital_corr_est_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_corr_est_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_corr_est_cc.block.yml
+Block with id "digital_correlate_access_code_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_correlate_access_code_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_correlate_access_code_bb.block.yml
+Block with id "digital_correlate_access_code_tag_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_correlate_access_code_tag_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_correlate_access_code_tag_xx.block.yml
+Block with id "digital_correlate_access_code_xx_ts" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_correlate_access_code_xx_ts.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_correlate_access_code_xx_ts.block.yml
+Block with id "digital_costas_loop_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_costas_loop_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_costas_loop_cc.block.yml
+Block with id "digital_cpmmod_bc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_cpmmod_bc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_cpmmod_bc.block.yml
+Block with id "digital_crc32_async_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_crc32_async_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_crc32_async_bb.block.yml
+Block with id "digital_crc32_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_crc32_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_crc32_bb.block.yml
+Block with id "digital_descrambler_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_descrambler_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_descrambler_bb.block.yml
+Block with id "digital_diff_decoder_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_diff_decoder_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_diff_decoder_bb.block.yml
+Block with id "digital_diff_encoder_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_diff_encoder_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_diff_encoder_bb.block.yml
+Block with id "digital_diff_phasor_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_diff_phasor_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_diff_phasor_cc.block.yml
+Block with id "digital_fll_band_edge_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_fll_band_edge_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_fll_band_edge_cc.block.yml
+Block with id "digital_framer_sink_1" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_framer_sink_1.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_framer_sink_1.block.yml
+Block with id "digital_gfsk_demod" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_gfsk_demod.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_gfsk_demod.block.yml
+Block with id "digital_gfsk_mod" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_gfsk_mod.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_gfsk_mod.block.yml
+Block with id "digital_glfsr_source_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_glfsr_source_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_glfsr_source_x.block.yml
+Block with id "digital_gmsk_demod" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_gmsk_demod.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_gmsk_demod.block.yml
+Block with id "digital_gmsk_mod" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_gmsk_mod.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_gmsk_mod.block.yml
+Block with id "digital_gmskmod_bc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_gmskmod_bc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_gmskmod_bc.block.yml
+Block with id "digital_hdlc_deframer_bp" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_hdlc_deframer_bp.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_hdlc_deframer_bp.block.yml
+Block with id "digital_hdlc_framer_pb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_hdlc_framer_pb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_hdlc_framer_pb.block.yml
+Block with id "digital_header_payload_demux" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_header_payload_demux.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_header_payload_demux.block.yml
+Block with id "digital_kurtotic_equalizer_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_kurtotic_equalizer_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_kurtotic_equalizer_cc.block.yml
+Block with id "digital_lms_dd_equalizer_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_lms_dd_equalizer_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_lms_dd_equalizer_cc.block.yml
+Block with id "digital_map_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_map_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_map_bb.block.yml
+Block with id "variable_modulate_vector" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_modulate_vector.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_modulate_vector.block.yml
+Block with id "digital_mpsk_snr_est_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_mpsk_snr_est_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_mpsk_snr_est_cc.block.yml
+Block with id "digital_msk_timing_recovery_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_msk_timing_recovery_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_msk_timing_recovery_cc.block.yml
+Block with id "digital_ofdm_carrier_allocator_cvc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_ofdm_carrier_allocator_cvc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_ofdm_carrier_allocator_cvc.block.yml
+Block with id "digital_ofdm_chanest_vcvc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_ofdm_chanest_vcvc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_ofdm_chanest_vcvc.block.yml
+Block with id "digital_ofdm_cyclic_prefixer" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_ofdm_cyclic_prefixer.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_ofdm_cyclic_prefixer.block.yml
+Block with id "digital_ofdm_frame_equalizer_vcvc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_ofdm_frame_equalizer_vcvc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_ofdm_frame_equalizer_vcvc.block.yml
+Block with id "digital_ofdm_rx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_ofdm_rx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_ofdm_rx.block.yml
+Block with id "digital_ofdm_serializer_vcc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_ofdm_serializer_vcc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_ofdm_serializer_vcc.block.yml
+Block with id "digital_ofdm_sync_sc_cfb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_ofdm_sync_sc_cfb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_ofdm_sync_sc_cfb.block.yml
+Block with id "digital_ofdm_tx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_ofdm_tx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_ofdm_tx.block.yml
+Block with id "digital_packet_headergenerator_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_packet_headergenerator_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_packet_headergenerator_bb.block.yml
+Block with id "digital_packet_headergenerator_bb_default" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_packet_headergenerator_bb_default.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_packet_headergenerator_bb_default.block.yml
+Block with id "digital_packet_headerparser_b" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_packet_headerparser_b.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_packet_headerparser_b.block.yml
+Block with id "digital_packet_headerparser_b_default" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_packet_headerparser_b_default.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_packet_headerparser_b_default.block.yml
+Block with id "digital_packet_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_packet_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_packet_sink.block.yml
+Block with id "digital_pfb_clock_sync_xxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_pfb_clock_sync.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_pfb_clock_sync.block.yml
+Block with id "digital_pn_correlator_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_pn_correlator_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_pn_correlator_cc.block.yml
+Block with id "digital_probe_density_b" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_probe_density_b.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_probe_density_b.block.yml
+Block with id "digital_probe_mpsk_snr_est_c" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_probe_mpsk_snr_est_c.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_probe_mpsk_snr_est_c.block.yml
+Block with id "digital_protocol_formatter_async" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_protocol_formatter_async.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_protocol_formatter_async.block.yml
+Block with id "digital_protocol_formatter_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_protocol_formatter_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_protocol_formatter_bb.block.yml
+Block with id "digital_protocol_parser_b" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_protocol_parser_b.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_protocol_parser_b.block.yml
+Block with id "digital_psk_demod" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_psk_demod.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_psk_demod.block.yml
+Block with id "digital_psk_mod" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_psk_mod.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_psk_mod.block.yml
+Block with id "digital_qam_demod" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_qam_demod.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_qam_demod.block.yml
+Block with id "digital_qam_mod" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_qam_mod.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_qam_mod.block.yml
+Block with id "digital_scrambler_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_scrambler_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_scrambler_bb.block.yml
+Block with id "digital_simple_correlator" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_simple_correlator.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_simple_correlator.block.yml
+Block with id "digital_simple_framer" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_simple_framer.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_simple_framer.block.yml
+Block with id "digital_symbol_sync_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/digital_symbol_sync_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/digital_symbol_sync_xx.block.yml
+Block with id "dtv_atsc_deinterleaver" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_deinterleaver.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_deinterleaver.block.yml
+Block with id "dtv_atsc_depad" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_depad.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_depad.block.yml
+Block with id "dtv_atsc_derandomizer" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_derandomizer.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_derandomizer.block.yml
+Block with id "dtv_atsc_equalizer" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_equalizer.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_equalizer.block.yml
+Block with id "dtv_atsc_field_sync_mux" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_field_sync_mux.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_field_sync_mux.block.yml
+Block with id "dtv_atsc_fpll" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_fpll.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_fpll.block.yml
+Block with id "dtv_atsc_fs_checker" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_fs_checker.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_fs_checker.block.yml
+Block with id "dtv_atsc_interleaver" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_interleaver.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_interleaver.block.yml
+Block with id "dtv_atsc_pad" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_pad.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_pad.block.yml
+Block with id "dtv_atsc_randomizer" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_randomizer.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_randomizer.block.yml
+Block with id "dtv_atsc_rs_decoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_rs_decoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_rs_decoder.block.yml
+Block with id "dtv_atsc_rs_encoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_rs_encoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_rs_encoder.block.yml
+Block with id "dtv_atsc_rx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_rx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_rx.block.yml
+Block with id "dtv_atsc_rx_filter" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_rx_filter.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_rx_filter.block.yml
+Block with id "dtv_atsc_sync" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_sync.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_sync.block.yml
+Block with id "dtv_atsc_trellis_encoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_trellis_encoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_trellis_encoder.block.yml
+Block with id "dtv_atsc_viterbi_decoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_atsc_viterbi_decoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_atsc_viterbi_decoder.block.yml
+Block with id "dtv_catv_frame_sync_enc_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_catv_frame_sync_enc_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_catv_frame_sync_enc_bb.block.yml
+Block with id "dtv_catv_randomizer_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_catv_randomizer_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_catv_randomizer_bb.block.yml
+Block with id "dtv_catv_reed_solomon_enc_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_catv_reed_solomon_enc_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_catv_reed_solomon_enc_bb.block.yml
+Block with id "dtv_catv_transport_framing_enc_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_catv_transport_framing_enc_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_catv_transport_framing_enc_bb.block.yml
+Block with id "dtv_catv_trellis_enc_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_catv_trellis_enc_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_catv_trellis_enc_bb.block.yml
+Block with id "dtv_dvb_bbheader_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvb_bbheader_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvb_bbheader_bb.block.yml
+Block with id "dtv_dvb_bbscrambler_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvb_bbscrambler_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvb_bbscrambler_bb.block.yml
+Block with id "dtv_dvb_bch_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvb_bch_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvb_bch_bb.block.yml
+Block with id "dtv_dvb_ldpc_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvb_ldpc_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvb_ldpc_bb.block.yml
+Block with id "dtv_dvbs2_interleaver_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbs2_interleaver_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbs2_interleaver_bb.block.yml
+Block with id "dtv_dvbs2_modulator_bc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbs2_modulator_bc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbs2_modulator_bc.block.yml
+Block with id "dtv_dvbs2_physical_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbs2_physical_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbs2_physical_cc.block.yml
+Block with id "dtv_dvbt2_cellinterleaver_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt2_cellinterleaver_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt2_cellinterleaver_cc.block.yml
+Block with id "dtv_dvbt2_framemapper_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt2_framemapper_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt2_framemapper_cc.block.yml
+Block with id "dtv_dvbt2_freqinterleaver_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt2_freqinterleaver_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt2_freqinterleaver_cc.block.yml
+Block with id "dtv_dvbt2_interleaver_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt2_interleaver_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt2_interleaver_bb.block.yml
+Block with id "dtv_dvbt2_miso_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt2_miso_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt2_miso_cc.block.yml
+Block with id "dtv_dvbt2_modulator_bc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt2_modulator_bc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt2_modulator_bc.block.yml
+Block with id "dtv_dvbt2_p1insertion_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt2_p1insertion_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt2_p1insertion_cc.block.yml
+Block with id "dtv_dvbt2_paprtr_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt2_paprtr_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt2_paprtr_cc.block.yml
+Block with id "dtv_dvbt2_pilotgenerator_cc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt2_pilotgenerator_cc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt2_pilotgenerator_cc.block.yml
+Block with id "dtv_dvbt_bit_inner_deinterleaver" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_bit_inner_deinterleaver.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_bit_inner_deinterleaver.block.yml
+Block with id "dtv_dvbt_bit_inner_interleaver" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_bit_inner_interleaver.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_bit_inner_interleaver.block.yml
+Block with id "dtv_dvbt_convolutional_deinterleaver" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_convolutional_deinterleaver.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_convolutional_deinterleaver.block.yml
+Block with id "dtv_dvbt_convolutional_interleaver" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_convolutional_interleaver.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_convolutional_interleaver.block.yml
+Block with id "dtv_dvbt_demap" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_demap.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_demap.block.yml
+Block with id "dtv_dvbt_demod_reference_signals" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_demod_reference_signals.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_demod_reference_signals.block.yml
+Block with id "dtv_dvbt_energy_descramble" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_energy_descramble.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_energy_descramble.block.yml
+Block with id "dtv_dvbt_energy_dispersal" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_energy_dispersal.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_energy_dispersal.block.yml
+Block with id "dtv_dvbt_inner_coder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_inner_coder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_inner_coder.block.yml
+Block with id "dtv_dvbt_map" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_map.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_map.block.yml
+Block with id "dtv_dvbt_ofdm_sym_acquisition" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_ofdm_sym_acquisition.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_ofdm_sym_acquisition.block.yml
+Block with id "dtv_dvbt_reed_solomon_dec" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_reed_solomon_dec.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_reed_solomon_dec.block.yml
+Block with id "dtv_dvbt_reed_solomon_enc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_reed_solomon_enc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_reed_solomon_enc.block.yml
+Block with id "dtv_dvbt_reference_signals" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_reference_signals.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_reference_signals.block.yml
+Block with id "dtv_dvbt_symbol_inner_interleaver" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_symbol_inner_interleaver.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_symbol_inner_interleaver.block.yml
+Block with id "dtv_dvbt_viterbi_decoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/dtv_dvbt_viterbi_decoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/dtv_dvbt_viterbi_decoder.block.yml
+Block with id "fec_async_decoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_async_decoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_async_decoder.block.yml
+Block with id "fec_async_encoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_async_encoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_async_encoder.block.yml
+Block with id "fec_ber_bf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_ber_bf.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_ber_bf.block.yml
+Block with id "fec_bercurve_generator" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_bercurve_generator.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_bercurve_generator.block.yml
+Block with id "fec_encode_ccsds_27_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_decode_ccsds_27_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_decode_ccsds_27_bb.block.yml
+Block with id "fec_decode_ccsds_27_fb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_decode_ccsds_27_fb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_decode_ccsds_27_fb.block.yml
+Block with id "fec_generic_decoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_decoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_decoder.block.yml
+Block with id "fec_depuncture_bb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_depuncture_bb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_depuncture_bb.block.yml
+Block with id "fec_generic_encoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_encoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_encoder.block.yml
+Block with id "fec_extended_async_encoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_extended_async_encoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_extended_async_encoder.block.yml
+Block with id "fec_extended_decoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_extended_decoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_extended_decoder.block.yml
+Block with id "fec_extended_encoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_extended_encoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_extended_encoder.block.yml
+Block with id "fec_extended_tagged_decoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_extended_tagged_decoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_extended_tagged_decoder.block.yml
+Block with id "fec_extended_tagged_encoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_extended_tagged_encoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_extended_tagged_encoder.block.yml
+Block with id "fec_puncture_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_puncture_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_puncture_xx.block.yml
+Block with id "fec_tagged_decoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_tagged_decoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_tagged_decoder.block.yml
+Block with id "fec_tagged_encoder" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fec_tagged_encoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fec_tagged_encoder.block.yml
+Block with id "fft_ctrlport_probe_psd" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fft_ctrlport_probe_psd.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fft_ctrlport_probe_psd.block.yml
+Block with id "fft_vxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fft_fft_vxx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fft_fft_vxx.block.yml
+Block with id "goertzel_fc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fft_goertzel_fc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fft_goertzel_fc.block.yml
+Block with id "logpwrfft_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/fft_logpwrfft_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/fft_logpwrfft_x.block.yml
+Block with id "band_pass_filter" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_band_pass_filter.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_band_pass_filter.block.yml
+Block with id "band_reject_filter" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_band_reject_filter.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_band_reject_filter.block.yml
+Block with id "dc_blocker_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_dc_blocker_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_dc_blocker_xx.block.yml
+Block with id "fft_filter_xxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_fft_filter_xxx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_fft_filter_xxx.block.yml
+Block with id "filter_delay_fc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_filter_delay_fc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_filter_delay_fc.block.yml
+Block with id "filterbank_vcvcf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_filterbank_vcvcf.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_filterbank_vcvcf.block.yml
+Block with id "fir_filter_xxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_fir_filter_xxx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_fir_filter_xxx.block.yml
+Block with id "freq_xlating_fft_filter_ccc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_freq_xlating_fft_filter_ccc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_freq_xlating_fft_filter_ccc.block.yml
+Block with id "freq_xlating_fir_filter_xxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_freq_xlating_fir_filter_xxx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_freq_xlating_fir_filter_xxx.block.yml
+Block with id "high_pass_filter" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_high_pass_filter.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_high_pass_filter.block.yml
+Block with id "hilbert_fc" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_hilbert_fc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_hilbert_fc.block.yml
+Block with id "iir_filter_xxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_iir_filter_xxx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_iir_filter_xxx.block.yml
+Block with id "interp_fir_filter_xxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_interp_fir_filter_xxx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_interp_fir_filter_xxx.block.yml
+Block with id "low_pass_filter" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_low_pass_filter.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_low_pass_filter.block.yml
+Block with id "mmse_interpolator_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_mmse_interpolator_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_mmse_interpolator_xx.block.yml
+Block with id "mmse_resampler_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_mmse_resampler_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_mmse_resampler_xx.block.yml
+Block with id "pfb_arb_resampler_xxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_pfb_arb_resampler.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_pfb_arb_resampler.block.yml
+Block with id "pfb_channelizer_ccf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_pfb_channelizer.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_pfb_channelizer.block.yml
+Block with id "pfb_channelizer_hier_ccf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_pfb_channelizer_hier.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_pfb_channelizer_hier.block.yml
+Block with id "pfb_decimator_ccf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_pfb_decimator.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_pfb_decimator.block.yml
+Block with id "pfb_interpolator_ccf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_pfb_interpolator.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_pfb_interpolator.block.yml
+Block with id "pfb_synthesizer_ccf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_pfb_synthesizer.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_pfb_synthesizer.block.yml
+Block with id "rational_resampler_xxx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_rational_resampler_xxx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_rational_resampler_xxx.block.yml
+Block with id "root_raised_cosine_filter" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_root_raised_cosine_filter.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_root_raised_cosine_filter.block.yml
+Block with id "single_pole_iir_filter_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/filter_single_pole_iir_filter_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/filter_single_pole_iir_filter_xx.block.yml
+Block with id "iio_attr_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_attr_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_attr_sink.block.yml
+Block with id "iio_attr_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_attr_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_attr_source.block.yml
+Block with id "iio_attr_updater" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_attr_updater.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_attr_updater.block.yml
+Block with id "iio_device_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_device_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_device_sink.block.yml
+Block with id "iio_device_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_device_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_device_source.block.yml
+Block with id "iio_fmcomms2_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_fmcomms2_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_fmcomms2_sink.block.yml
+Block with id "iio_fmcomms2_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_fmcomms2_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_fmcomms2_source.block.yml
+Block with id "iio_fmcomms5_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_fmcomms5_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_fmcomms5_sink.block.yml
+Block with id "iio_fmcomms5_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_fmcomms5_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_fmcomms5_source.block.yml
+Block with id "iio_pluto_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_pluto_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_pluto_sink.block.yml
+Block with id "iio_pluto_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/iio_pluto_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/iio_pluto_source.block.yml
+Block with id "import" loaded from
+  /usr/local/share/gnuradio/grc/blocks/import.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/import.block.yml
+Block with id "variable_ldpc_decoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/ldpc_decoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/ldpc_decoder_def_list.block.yml
+Block with id "variable_ldpc_encoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/ldpc_encoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/ldpc_encoder_def_list.block.yml
+Block with id "note" loaded from
+  /usr/local/share/gnuradio/grc/blocks/note.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/note.block.yml
+Block with id "options" loaded from
+  /usr/local/share/gnuradio/grc/blocks/options.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/options.block.yml
+Block with id "pad_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/pad_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/pad_sink.block.yml
+Block with id "pad_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/pad_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/pad_source.block.yml
+Block with id "parameter" loaded from
+  /usr/local/share/gnuradio/grc/blocks/parameter.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/parameter.block.yml
+Block with id "qtgui_bercurve_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_ber_sink_b.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_ber_sink_b.block.yml
+Block with id "variable_qtgui_check_box" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_check_box.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_check_box.block.yml
+Block with id "variable_qtgui_chooser" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_chooser.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_chooser.block.yml
+Block with id "qtgui_const_sink_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_const_sink_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_const_sink_x.block.yml
+Block with id "qtgui_edit_box_msg" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_edit_box_msg.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_edit_box_msg.block.yml
+Block with id "variable_qtgui_entry" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_entry.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_entry.block.yml
+Block with id "qtgui_eye_sink_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_eye_sink_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_eye_sink_x.block.yml
+Block with id "qtgui_freq_sink_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_freq_sink_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_freq_sink_x.block.yml
+Block with id "qtgui_histogram_sink_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_histogram_sink_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_histogram_sink_x.block.yml
+Block with id "variable_qtgui_label" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_label.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_label.block.yml
+Block with id "qtgui_number_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_number_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_number_sink.block.yml
+Block with id "variable_qtgui_push_button" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_push_button.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_push_button.block.yml
+Block with id "variable_qtgui_range" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_range.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_range.block.yml
+Block with id "qtgui_sink_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_sink_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_sink_x.block.yml
+Block with id "qtgui_tab_widget" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_tab_widget.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_tab_widget.block.yml
+Block with id "qtgui_time_raster_sink_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_time_raster_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_time_raster_x.block.yml
+Block with id "qtgui_time_sink_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_time_sink_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_time_sink_x.block.yml
+Block with id "qtgui_vector_sink_f" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_vector_sink_f.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_vector_sink_f.block.yml
+Block with id "qtgui_waterfall_sink_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/qtgui_waterfall_sink_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/qtgui_waterfall_sink_x.block.yml
+Block with id "snippet" loaded from
+  /usr/local/share/gnuradio/grc/blocks/snippet.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/snippet.block.yml
+Block with id "variable_tpc_decoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/tpc_decoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/tpc_decoder_def_list.block.yml
+Block with id "variable_tpc_encoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/tpc_encoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/tpc_encoder_def_list.block.yml
+Block with id "trellis_encoder_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_encoder_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_encoder_xx.block.yml
+Block with id "trellis_metrics_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_metrics_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_metrics_x.block.yml
+Block with id "trellis_pccc_decoder_combined_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_pccc_decoder_combined_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_pccc_decoder_combined_xx.block.yml
+Block with id "trellis_pccc_decoder_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_pccc_decoder_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_pccc_decoder_x.block.yml
+Block with id "trellis_pccc_encoder_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_pccc_encoder_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_pccc_encoder_xx.block.yml
+Block with id "trellis_permutation" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_permutation.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_permutation.block.yml
+Block with id "trellis_sccc_decoder_combined_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_sccc_decoder_combined_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_sccc_decoder_combined_xx.block.yml
+Block with id "trellis_sccc_decoder_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_sccc_decoder_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_sccc_decoder_x.block.yml
+Block with id "trellis_sccc_encoder_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_sccc_encoder_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_sccc_encoder_xx.block.yml
+Block with id "trellis_siso_combined_f" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_siso_combined_f.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_siso_combined_f.block.yml
+Block with id "trellis_siso_f" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_siso_f.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_siso_f.block.yml
+Block with id "trellis_viterbi_combined_xx" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_viterbi_combined_xx.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_viterbi_combined_xx.block.yml
+Block with id "trellis_viterbi_x" loaded from
+  /usr/local/share/gnuradio/grc/blocks/trellis_viterbi_x.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/trellis_viterbi_x.block.yml
+Block with id "variable" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable.block.yml
+Block with id "variable_band_pass_filter_taps" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_band_pass_filter_taps.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_band_pass_filter_taps.block.yml
+Block with id "variable_band_reject_filter_taps" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_band_reject_filter_taps.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_band_reject_filter_taps.block.yml
+Block with id "variable_cc_decoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_cc_decoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_cc_decoder_def_list.block.yml
+Block with id "variable_cc_encoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_cc_encoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_cc_encoder_def_list.block.yml
+Block with id "variable_ccsds_encoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_ccsds_encoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_ccsds_encoder_def_list.block.yml
+Block with id "variable_config" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_config.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_config.block.yml
+Block with id "variable_dummy_decoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_dummy_decoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_dummy_decoder_def_list.block.yml
+Block with id "variable_dummy_encoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_dummy_encoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_dummy_encoder_def_list.block.yml
+Block with id "variable_function_probe" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_function_probe.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_function_probe.block.yml
+Block with id "variable_header_format_default" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_header_format_default.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_header_format_default.block.yml
+Block with id "variable_high_pass_filter_taps" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_high_pass_filter_taps.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_high_pass_filter_taps.block.yml
+Block with id "variable_ldpc_G_matrix_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_ldpc_G_matrix_object.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_ldpc_G_matrix_object.block.yml
+Block with id "variable_ldpc_H_matrix_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_ldpc_H_matrix_object.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_ldpc_H_matrix_object.block.yml
+Block with id "variable_ldpc_bit_flip_decoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_ldpc_bit_flip_decoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_ldpc_bit_flip_decoder.block.yml
+Block with id "variable_ldpc_encoder_G_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_ldpc_encoder_G.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_ldpc_encoder_G.block.yml
+Block with id "variable_ldpc_encoder_H_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_ldpc_encoder_H.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_ldpc_encoder_H.block.yml
+Block with id "variable_low_pass_filter_taps" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_low_pass_filter_taps.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_low_pass_filter_taps.block.yml
+Block with id "variable_polar_code_configurator" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_polar_code_configurator.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_polar_code_configurator.block.yml
+Block with id "variable_polar_decoder_sc_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_polar_decoder_sc.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_polar_decoder_sc.block.yml
+Block with id "variable_polar_decoder_sc_list_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_polar_decoder_sc_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_polar_decoder_sc_list.block.yml
+Block with id "variable_polar_decoder_sc_systematic_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_polar_decoder_sc_systematic.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_polar_decoder_sc_systematic.block.yml
+Block with id "variable_polar_encoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_polar_encoder.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_polar_encoder.block.yml
+Block with id "variable_polar_encoder_systematic_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_polar_encoder_systematic.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_polar_encoder_systematic.block.yml
+Block with id "variable_repetition_decoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_repetition_decoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_repetition_decoder_def_list.block.yml
+Block with id "variable_repetition_encoder_def" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_repetition_encoder_def_list.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_repetition_encoder_def_list.block.yml
+Block with id "variable_rrc_filter_taps" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_rrc_filter_taps.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_rrc_filter_taps.block.yml
+Block with id "variable_struct" loaded from
+  /usr/local/share/gnuradio/grc/blocks/variable_struct.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/variable_struct.block.yml
+Block with id "video_sdl_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/video_sdl_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/video_sdl_sink.block.yml
+Block with id "vocoder_alaw_decode_bs" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_alaw_decode_bs.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_alaw_decode_bs.block.yml
+Block with id "vocoder_alaw_encode_sb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_alaw_encode_sb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_alaw_encode_sb.block.yml
+>>> Warning: vocoder_codec2_decode_ps - option_attributes are for enums only, ignoring
+>>> Warning: vocoder_codec2_encode_sp - option_attributes are for enums only, ignoring
+Block with id "vocoder_cvsd_decode_bf" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_cvsd_decode.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_cvsd_decode.block.yml
+Block with id "vocoder_cvsd_decode_bs" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_cvsd_decode_bs.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_cvsd_decode_bs.block.yml
+Block with id "vocoder_cvsd_encode_fb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_cvsd_encode.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_cvsd_encode.block.yml
+Block with id "vocoder_cvsd_encode_sb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_cvsd_encode_sb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_cvsd_encode_sb.block.yml
+Block with id "vocoder_g721_decode_bs" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_g721_decode_bs.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_g721_decode_bs.block.yml
+Block with id "vocoder_g721_encode_sb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_g721_encode_sb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_g721_encode_sb.block.yml
+Block with id "vocoder_g723_24_decode_bs" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_g723_24_decode_bs.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_g723_24_decode_bs.block.yml
+Block with id "vocoder_g723_24_encode_sb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_g723_24_encode_sb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_g723_24_encode_sb.block.yml
+Block with id "vocoder_g723_40_decode_bs" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_g723_40_decode_bs.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_g723_40_decode_bs.block.yml
+Block with id "vocoder_g723_40_encode_sb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_g723_40_encode_sb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_g723_40_encode_sb.block.yml
+Block with id "vocoder_gsm_fr_decode_ps" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_gsm_fr_decode_ps.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_gsm_fr_decode_ps.block.yml
+Block with id "vocoder_gsm_fr_encode_sp" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_gsm_fr_encode_sp.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_gsm_fr_encode_sp.block.yml
+Block with id "vocoder_ulaw_decode_bs" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_ulaw_decode_bs.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_ulaw_decode_bs.block.yml
+Block with id "vocoder_ulaw_encode_sb" loaded from
+  /usr/local/share/gnuradio/grc/blocks/vocoder_ulaw_encode_sb.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/vocoder_ulaw_encode_sb.block.yml
+Block with id "xmlrpc_client" loaded from
+  /usr/local/share/gnuradio/grc/blocks/xmlrpc_client.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/xmlrpc_client.block.yml
+Block with id "xmlrpc_server" loaded from
+  /usr/local/share/gnuradio/grc/blocks/xmlrpc_server.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/xmlrpc_server.block.yml
+Block with id "zeromq_pub_msg_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_pub_msg_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_pub_msg_sink.block.yml
+Block with id "zeromq_pub_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_pub_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_pub_sink.block.yml
+Block with id "zeromq_pull_msg_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_pull_msg_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_pull_msg_source.block.yml
+Block with id "zeromq_pull_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_pull_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_pull_source.block.yml
+Block with id "zeromq_push_msg_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_push_msg_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_push_msg_sink.block.yml
+Block with id "zeromq_push_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_push_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_push_sink.block.yml
+Block with id "zeromq_rep_msg_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_rep_msg_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_rep_msg_sink.block.yml
+Block with id "zeromq_rep_sink" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_rep_sink.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_rep_sink.block.yml
+Block with id "zeromq_req_msg_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_req_msg_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_req_msg_source.block.yml
+Block with id "zeromq_req_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_req_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_req_source.block.yml
+Block with id "zeromq_sub_msg_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_sub_msg_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_sub_msg_source.block.yml
+Block with id "zeromq_sub_source" loaded from
+  /usr/local/share/gnuradio/grc/blocks/zeromq_sub_source.block.yml
+overwritten by
+  /usr/share/gnuradio/grc/blocks/zeromq_sub_source.block.yml
+<<< Welcome to GNU Radio Companion 3.9.8.0 >>>
+
+Block paths:
+	/home/analog/.grc_gnuradio
+	/home/analog/gr-radar/grc
+	/usr/local/share/gnuradio/grc/blocks
+	/usr/share/gnuradio/grc/blocks
+
+Loading: "/home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.grc"
+>>> Done
+
+Loading: "/home/analog/gr-iio/iio-examples/fmradio.grc"
+>>> Done
+
+
 
 
 
