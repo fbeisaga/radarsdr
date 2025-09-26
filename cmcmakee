@@ -68,3 +68,77 @@ CMake Error: Error processing file: /home/analog/gcm-build/cmake_install.cmake
 == /usr/local/share/cmake/gnuradio ==
 ls: cannot access '/usr/local/share/cmake/gnuradio': No such file or directory
 
+analog@analog:~ $ cat > ~/install_gr_radar_v2.sh <<'EOF'
+
+#!/bin/sh
+
+set -eu
+
+
+
+echo "=== A) Paquetes base ==="
+
+sudo apt-get update
+
+sudo apt-get install -y cmake build-essential git wget curl ca-certificates \
+
+                        gnuradio gnuradio-dev pybind11-dev python3-pygccxml castxml \
+
+                        python3-numpy
+
+
+
+echo "Python y NumPy:"
+
+python3 - <<'PY'
+
+import sys, numpy
+
+print("Python:", sys.version.split()[0])
+
+print("NumPy :", numpy.__version__)
+
+PY
+
+
+
+echo "=== B) Instalar gnuradio-cmake-modules (forzar reinstalación segura) ==="
+
+cd "$HOME"
+
+rm -rf gcm gcm.tar.gz gcm-build
+
+wget -O gcm.tar.gz https://github.com/gnuradio/gnuradio-cmake-modules/archive/refs/heads/master.tar.gz \
+
+ || curl -L https://github.com/gnuradio/gnuradio-cmake-modules/archive/refs/heads/master.tar.gz -o gcm.tar.gz
+
+mkdir gcm
+
+tar -xzf gcm.tar.gz -C gcm --strip-components=1
+
+cmake -S gcm -B gcm-build -DCMAKE_INSTALL_PREFIX=/usr/local
+
+sh -x ~/install_gr_radar_v2.sh 2>&1 | tee ~/install_gr_radar_v2_$(date +%F_%H%M).loges radar_"dev/rules.d/90-iio-char.rules
++ set -eu
++ echo === A) Paquetes base ===
+=== A) Paquetes base ===
++ sudo apt-get update
+Hit:1 http://archive.raspberrypi.org/debian bullseye InRelease
+Hit:2 http://raspbian.raspberrypi.org/raspbian bullseye InRelease
+Reading package lists...
++ sudo apt-get install -y cmake build-essential git wget curl ca-certificates
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.9).
+ca-certificates is already the newest version (20210119).
+curl is already the newest version (7.74.0-1.3+deb11u15).
+git is already the newest version (1:2.30.2-1+deb11u4).
+wget is already the newest version (1.21-1+deb11u2).
+cmake is already the newest version (3.18.4-2+rpt1+rpi1+deb11u1).
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
++ gnuradio gnuradio-dev pybind11-dev python3-pygccxml castxml
+/home/analog/install_gr_radar_v2.sh: 14: gnuradio: not found
+analog@analog:~ $ 
+
+
