@@ -25,3 +25,46 @@ tar -xzf gcm.tar.gz -C gcm --strip-components=1
 gzip: stdin: not in gzip format
 tar: Child returned status 1
 tar: Error is not recoverable: exiting now
+analog@analog:~ $ cd ~
+
+rm -rf gcm gcm.tar.gz gcm-build
+
+wget -O gcm.tar.gz https://github.com/gnuradio/gnuradio-cmake-modules/archive/refs/heads/master.tar.gz \
+
+ || curl -L https://github.com/gnuradio/gnuradio-cmake-modules/archive/refs/heads/master.tar.gz -o gcm.tar.gz
+
+
+
+mkdir gcm
+
+tar -xzf gcm.tar.gz -C gcm --strip-components=1
+
+
+
+cmake -S gcm -B gcm-build -DCMAKE_INSTALL_PREFIX=/usr/local
+
+sudo cmake --install gcm-build
+
+
+
+echo "== /usr/local/share/cmake/gnuradio =="
+
+ls /usr/local/share/cmake/gnuradio | egrep 'Gr(MinReq|CompilerSettings|Pybind)'
+
+--2025-09-26 02:52:16--  https://github.com/gnuradio/gnuradio-cmake-modules/archive/refs/heads/master.tar.gz
+Resolving github.com (github.com)... 4.228.31.150
+Connecting to github.com (github.com)|4.228.31.150|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-09-26 02:52:17 ERROR 404: Not Found.
+
+bash: syntax error near unexpected token `||'
+
+gzip: stdin: unexpected end of file
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+CMake Error: The source directory "/home/analog/gcm" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+CMake Error: Error processing file: /home/analog/gcm-build/cmake_install.cmake
+== /usr/local/share/cmake/gnuradio ==
+ls: cannot access '/usr/local/share/cmake/gnuradio': No such file or directory
+
