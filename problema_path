@@ -2506,6 +2506,85 @@ bash: ..: command not found
 make: *** No targets specified and no makefile found.  Stop.
 make: *** No rule to make target 'install'.  Stop.
 analog@analog:~/gr-radar/build $ 
+alog@analog:~ $ cd ~/gr-radar
+
+rm -rf build
+
+cmake -S . -B build -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_MODULE_PATH="/usr/local/lib/cmake/gnuradio:/usr/lib/arm-linux-gnueabihf/cmake/gnuradio" -DGR_PYTHON_DIR=/usr/local/lib/python3.9/dist-packages
+
+cmake --build build -j2
+
+sudo cmake --install build
+
+sudo ldconfig
+
+-- The CXX compiler identification is GNU 10.2.1
+-- The C compiler identification is GNU 10.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Build type not specified: defaulting to release.
+-- Found LOG4CPP: /usr/lib/arm-linux-gnueabihf/liblog4cpp.so
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for module 'gmp'
+--   Found gmp, version 6.2.1
+-- Found GMP: /usr/lib/arm-linux-gnueabihf/libgmpxx.so  
+-- Using GMP.
+-- Found MPLIB: /usr/lib/arm-linux-gnueabihf/libgmpxx.so  
+-- Found Boost: /usr/lib/arm-linux-gnueabihf/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.74.0") found components: date_time program_options filesystem system regex thread unit_test_framework 
+-- Found Volk: Volk::volk  
+-- User set python executable /usr/bin/python3
+-- Found PythonInterp: /usr/bin/python3 (found version "3.9.2") 
+-- Found PythonLibs: /usr/lib/arm-linux-gnueabihf/libpython3.9.so (found suitable exact version "3.9.2") 
+CMake Error at CMakeLists.txt:49 (include):
+  include could not find load file:
+
+    GrMinReq
+
+
+CMake Error at CMakeLists.txt:55 (include):
+  include could not find load file:
+
+    GrCompilerSettings
+
+
+-- Found Git: /usr/bin/git  
+-- Extracting version information from git describe...
+-- Python checking for PyQt5 - found
+-- Checking for module 'Qt5Qwt6'
+--   Found Qt5Qwt6, version 6.1.4
+-- QWT Version: 6.1.4
+-- Found Qwt: /usr/lib/libqwt-qt5.so  
+-- Found Doxygen: /usr/bin/doxygen (found version "1.9.1") found components: doxygen dot 
+-- Checking for module 'uhd'
+--   No package 'uhd' found
+-- Checking for module 'fftw3f >= 3.0'
+--   Found fftw3f , version 3.3.8
+-- Found FFTW3f: /usr/lib/arm-linux-gnueabihf/libfftw3f.so  
+-- Using install prefix: /usr/local
+-- Building for version: 1.0.0.0 / 1.0.0
+-- No C++ unit tests... skipping
+-- PYTHON and GRC components are enabled
+-- Python checking for pygccxml - found
+-- Found PythonLibs: /usr/lib/arm-linux-gnueabihf/libpython3.9.so
+-- Performing Test HAS_FLTO
+-- Performing Test HAS_FLTO - Success
+-- Found pybind11: /usr/include (found version "2.6.2" )
+-- Configuring incomplete, errors occurred!
+See also "/home/analog/gr-radar/build/CMakeFiles/CMakeOutput.log".
+See also "/home/analog/gr-radar/build/CMakeFiles/CMakeError.log".
+gmake: *** No targets specified and no makefile found.  Stop.
+[sudo] password for analog: 
+CMake Error: Error processing file: /home/analog/gr-radar/build/cmake_install.cmake
+analog@analog:~/gr-radar $ 
+
 
 
 
