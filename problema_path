@@ -2409,6 +2409,104 @@ make: *** No targets specified and no makefile found.  Stop.
 make: *** No rule to make target 'install'.  Stop.
 analog@analog:~/gr-radar/build $ 
 
+analog@analog:~/gr-radar/build $ cd ~        # te lleva a /home/analog
+
+pwd         # para verificar dónde quedaste
+
+whoami      # debería mostrar: analog
+
+/home/analog
+analog
+analog@analog:~ $ # 0) Deps para los bindings de Python
+
+sudo apt-get update
+
+sudo apt-get install -y pybind11-dev python3-pygccxml
+
+
+
+# 1) Entrar al repo de gr-radar
+
+cd ~/gr-radar
+
+
+
+# (opcional) traer submódulos si el repo los usa
+
+git submodule update --init --recursive
+
+
+
+# 2) Limpiar build anterior y crear uno nuevo
+
+rm -rf build
+
+mkdir build && cd buildrsr/local/lib/python3.9/dist-packages \lib/arm-linux-gnue
+
+
+
+# 3) Configurar CMake apuntando a los módulos de GNU Radio
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local \
+
+      -DCMAKE_MODULE_PATH="/usr/local/lib/cmake/gnuradio:/usr/lib/arm-linux-gnueabihf/cmake/gnuradio" \
+
+      -DGR_PYTHON_DIR=/usr/local/lib/python3.9/dist-packages \
+
+      ..
+
+
+
+# 4) Compilar e instalar
+
+make -j2
+
+sudo make install
+
+sudo ldconfig
+
+[sudo] password for analog: 
+Get:1 http://raspbian.raspberrypi.org/raspbian bullseye InRelease [15.0 kB]        
+Hit:2 http://archive.raspberrypi.org/debian bullseye InRelease
+Fetched 15.0 kB in 4s (4,270 B/s)
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+pybind11-dev is already the newest version (2.6.2-1).
+The following NEW packages will be installed:
+  castxml python3-pygccxml
+0 upgraded, 2 newly installed, 0 to remove and 15 not upgraded.
+Need to get 5,489 kB of archives.
+After this operation, 32.5 MB of additional disk space will be used.
+Get:1 http://espejito.fder.edu.uy/raspbian/raspbian bullseye/main armhf castxml armhf 0.3.6-2 [5,409 kB]
+Get:2 http://espejito.fder.edu.uy/raspbian/raspbian bullseye/main armhf python3-pygccxml all 1.9.1-3 [80.4 kB]
+Fetched 5,489 kB in 3s (1,788 kB/s)    
+Selecting previously unselected package castxml.
+(Reading database ... 194475 files and directories currently installed.)
+Preparing to unpack .../castxml_0.3.6-2_armhf.deb ...
+Unpacking castxml (0.3.6-2) ...
+Selecting previously unselected package python3-pygccxml.
+Preparing to unpack .../python3-pygccxml_1.9.1-3_all.deb ...
+Unpacking python3-pygccxml (1.9.1-3) ...
+Setting up castxml (0.3.6-2) ...
+Setting up python3-pygccxml (1.9.1-3) ...
+Processing triggers for man-db (2.9.4-2) ...
+CMake Warning:
+  No source or binary directory provided.  Both will be assumed to be the
+  same as the current working directory, but note that this warning will
+  become a fatal error in future CMake releases.
+
+
+CMake Error: The source directory "/home/analog/gr-radar/build" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+bash: -DCMAKE_MODULE_PATH=/usr/local/lib/cmake/gnuradio:/usr/lib/arm-linux-gnueabihf/cmake/gnuradio: No such file or directory
+bash: -DGR_PYTHON_DIR=/usr/local/lib/python3.9/dist-packages: No such file or directory
+bash: ..: command not found
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target 'install'.  Stop.
+analog@analog:~/gr-radar/build $ 
+
 
 
 
