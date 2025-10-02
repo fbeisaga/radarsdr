@@ -1,3 +1,20 @@
+sudo apt update && sudo apt install -y git cmake g++ libboost-all-dev libgmp-dev swig python3-numpy python3-mako python3-sphinx doxygen gnuradio-dev gr-osmosdr
+cd ~
+git clone https://github.com/kit-cel/gr-radar.git
+
+cd gr-radar
+mkdir build
+cd build
+cmake ..
+make -j4
+
+sudo make install
+sudo ldconfig
+
+gnuradio-companion
+
+
+
 analog@analog:~ $ sudo /usr/bin/python3 -u /home/analog/Desktop/EJEMPLOS/FM_BEISAGAv1.py
 [sudo] password for analog: 
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
@@ -741,6 +758,7 @@ gnuradio:
         500 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf Packages
         100 /var/lib/dpkg/status
 /////////////////////////////////////////////////////////////////
+
 
 
 
