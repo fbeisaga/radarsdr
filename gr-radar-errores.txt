@@ -1,0 +1,62 @@
+analog@analog:~/gr-radar/build $ make clean
+analog@analog:~/gr-radar/build $ make
+[  1%] Generating moc_spectrogram_plot.cpp
+[  2%] Generating moc_scatter_plot.cpp
+[  3%] Generating moc_time_plot.cpp
+Scanning dependencies of target gnuradio-radar
+[  5%] Building CXX object lib/CMakeFiles/gnuradio-radar.dir/moc_scatter_plot.cpp.o
+[  6%] Building CXX object lib/CMakeFiles/gnuradio-radar.dir/moc_time_plot.cpp.o
+[  7%] Building CXX object lib/CMakeFiles/gnuradio-radar.dir/moc_spectrogram_plot.cpp.o
+[  9%] Building CXX object lib/CMakeFiles/gnuradio-radar.dir/scatter_plot.cc.o
+/home/analog/gr-radar/lib/scatter_plot.cc: In member function ‘void gr::radar::scatter_plot::refresh()’:
+/home/analog/gr-radar/lib/scatter_plot.cc:93:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<QwtPlotMarker*>::size_type’ {aka ‘unsigned int’} [-Wsign-compare]
+   93 |     for (int k = 0; k < d_marker.size(); k++)
+      |                     ~~^~~~~~~~~~~~~~~~~
+/home/analog/gr-radar/lib/scatter_plot.cc:98:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<float>::size_type’ {aka ‘unsigned int’} [-Wsign-compare]
+   98 |         for (int k = 0; k < d_x->size();
+      |                         ~~^~~~~~~~~~~~~
+/home/analog/gr-radar/lib/scatter_plot.cc:100:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<QwtPlotMarker*>::size_type’ {aka ‘unsigned int’} [-Wsign-compare]
+  100 |             if (k < d_marker.size()) {
+      |                 ~~^~~~~~~~~~~~~~~~~
+[ 10%] Building CXX object lib/CMakeFiles/gnuradio-radar.dir/time_plot.cc.o
+/home/analog/gr-radar/lib/time_plot.cc: In member function ‘void gr::radar::time_plot::refresh()’:
+/home/analog/gr-radar/lib/time_plot.cc:97:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<QwtPlotMarker*>::size_type’ {aka ‘unsigned int’} [-Wsign-compare]
+   97 |     for (int k = 0; k < d_marker[marker_index].size(); k++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/analog/gr-radar/lib/time_plot.cc:103:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<float>::size_type’ {aka ‘unsigned int’} [-Wsign-compare]
+  103 |         for (int k = 0; k < d_y->size(); k++) {
+      |                         ~~^~~~~~~~~~~~~
+/home/analog/gr-radar/lib/time_plot.cc:104:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<QwtPlotMarker*>::size_type’ {aka ‘unsigned int’} [-Wsign-compare]
+  104 |             if (k < d_marker[marker_index].size()) {
+      |                 ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 11%] Building CXX object lib/CMakeFiles/gnuradio-radar.dir/spectrogram_plot.cc.o
+/home/analog/gr-radar/lib/spectrogram_plot.cc: In member function ‘void gr::radar::spectrogram_plot::refresh()’:
+/home/analog/gr-radar/lib/spectrogram_plot.cc:108:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<float>::size_type’ {aka ‘unsigned int’} [-Wsign-compare]
+  108 |     for (int k = 0; k < d_buffer->size(); k++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~
+/home/analog/gr-radar/lib/spectrogram_plot.cc:119:18: warning: variable ‘rows’ set but not used [-Wunused-but-set-variable]
+  119 |     int columns, rows;
+      |                  ^~~~
+[ 13%] Building CXX object lib/CMakeFiles/gnuradio-radar.dir/signal_generator_cw_c_impl.cc.o
+/home/analog/gr-radar/lib/signal_generator_cw_c_impl.cc: In static member function ‘static gr::radar::signal_generator_cw_c::sptr gr::radar::signal_generator_cw_c::make(int, int, std::vector<float>, float, const string&)’:
+/home/analog/gr-radar/lib/signal_generator_cw_c_impl.cc:47:15: error: ‘make_shared_block’ is not a member of ‘gr’
+   47 |    return gr::make_shared_block<signal_generator_cw_c_impl>(packet_len, samp_rate, frequency, amplitude, len_key);
+      |               ^~~~~~~~~~~~~~~~~
+/home/analog/gr-radar/lib/signal_generator_cw_c_impl.cc:47:59: error: expected primary-expression before ‘>’ token
+   47 |    return gr::make_shared_block<signal_generator_cw_c_impl>(packet_len, samp_rate, frequency, amplitude, len_key);
+      |                                                           ^
+/home/analog/gr-radar/lib/signal_generator_cw_c_impl.cc:47:61: warning: left operand of comma operator has no effect [-Wunused-value]
+   47 |    return gr::make_shared_block<signal_generator_cw_c_impl>(packet_len, samp_rate, frequency, amplitude, len_key);
+      |                                                             ^~~~~~~~~~
+/home/analog/gr-radar/lib/signal_generator_cw_c_impl.cc:47:84: warning: right operand of comma operator has no effect [-Wunused-value]
+   47 |    return gr::make_shared_block<signal_generator_cw_c_impl>(packet_len, samp_rate, frequency, amplitude, len_key);
+      |                                                                                    ^~~~~~~~~
+/home/analog/gr-radar/lib/signal_generator_cw_c_impl.cc:47:95: warning: right operand of comma operator has no effect [-Wunused-value]
+   47 |    return gr::make_shared_block<signal_generator_cw_c_impl>(packet_len, samp_rate, frequency, amplitude, len_key);
+      |                                                                                               ^~~~~~~~~
+/home/analog/gr-radar/lib/signal_generator_cw_c_impl.cc:47:106: warning: right operand of comma operator has no effect [-Wunused-value]
+   47 |    return gr::make_shared_block<signal_generator_cw_c_impl>(packet_len, samp_rate, frequency, amplitude, len_key);
+      |                                                                                                          ^~~~~~~
+make[2]: *** [lib/CMakeFiles/gnuradio-radar.dir/build.make:172: lib/CMakeFiles/gnuradio-radar.dir/signal_generator_cw_c_impl.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:290: lib/CMakeFiles/gnuradio-radar.dir/all] Error 2
+make: *** [Makefile:160: all] Error 2
